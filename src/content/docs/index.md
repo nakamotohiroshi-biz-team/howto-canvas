@@ -4,6 +4,9 @@ description: AI設定から開発手順、生活家電の手入れまで、図�
 template: splash
 hero:
   tagline: 道具とツールの使い方を、直感的な図解とステップで整理する
+  image:
+    file: ../../assets/hero-banner.svg
+    alt: HowTo Canvas キービジュアル
   actions:
     - text: AIツールの使い方を見る
       link: /howto-canvas/ai/claude/skills/
