@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="mainBranchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="featureGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="prGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title & Subtitle -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">チーム開発の基本：ブランチとプルリクエスト (Pull Request)</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">mainブランチを保護し、作業用ブランチで安全に開発・レビューする仕組み</text>
+
+  <!-- Main Branch Line -->
+  <line x1="80" y1="140" x2="720" y2="140" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <rect x="75" y="115" width="70" height="24" rx="6" fill="#1e3a8a"/>
+  <text x="110" y="132" text-anchor="middle" fill="#93c5fd" font-family="sans-serif" font-size="12" font-weight="bold">main</text>
+
+  <!-- Main Commits -->
+  <circle cx="170" cy="140" r="14" fill="#3b82f6" stroke="#1e293b" stroke-width="3"/>
+  <circle cx="700" cy="140" r="14" fill="#3b82f6" stroke="#1e293b" stroke-width="3"/>
+
+  <!-- Branch Out Arrow -->
+  <path d="M 170 140 Q 230 140 250 250" fill="none" stroke="#10b981" stroke-width="4" stroke-dasharray="6"/>
+  <polygon points="248,252 254,244 242,246" fill="#10b981"/>
+
+  <!-- Feature Branch Line -->
+  <line x1="250" y1="260" x2="520" y2="260" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  <rect x="240" y="285" width="120" height="24" rx="6" fill="#064e3b"/>
+  <text x="300" y="301" text-anchor="middle" fill="#6ee7b7" font-family="sans-serif" font-size="12" font-weight="bold">feature/login</text>
+
+  <!-- Feature Commits -->
+  <circle cx="330" cy="260" r="14" fill="#10b981" stroke="#1e293b" stroke-width="3"/>
+  <text x="330" y="240" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">作業1</text>
+  
+  <circle cx="440" cy="260" r="14" fill="#10b981" stroke="#1e293b" stroke-width="3"/>
+  <text x="440" y="240" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="11">作業2</text>
+
+  <!-- Pull Request Badge -->
+  <g filter="url(#shadow)">
+    <rect x="520" y="185" width="130" height="60" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="585" y="210" text-anchor="middle" fill="#fef3c7" font-family="sans-serif" font-size="12" font-weight="bold">プルリクエスト (PR)</text>
+    <text x="585" y="230" text-anchor="middle" fill="#f59e0b" font-family="sans-serif" font-size="11">仲間がレビュー＆承認</text>
+  </g>
+
+  <!-- Merge Arrow -->
+  <path d="M 520 260 Q 640 260 700 140" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  <polygon points="698,138 690,146 701,148" fill="#f59e0b"/>
+
+  <!-- Step Descriptions -->
+  <g fill="#94a3b8" font-family="sans-serif" font-size="12">
+    <text x="170" y="175" text-anchor="middle">① ブランチ作成</text>
+    <text x="385" y="340" text-anchor="middle">② ローカルで開発・コミット</text>
+    <text x="585" y="270" text-anchor="middle">③ GitHubでPR作成</text>
+    <text x="700" y="175" text-anchor="middle">④ レビュー後マージ</text>
+  </g>
+
+  <!-- Bottom Guide -->
+  <rect x="40" y="365" width="720" height="35" rx="8" fill="#334155" opacity="0.6"/>
+  <text x="400" y="388" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="13">
+    「本番環境（main）を壊さない」ことがチーム開発の最も大切なルールです
+  </text>
+</svg>
