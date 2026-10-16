@@ -1,0 +1,16 @@
+/* 画像の角丸と影、中央揃え */
+.sl-markdown-content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 1.5rem auto;
+  display: block;
+}
+
+/* Mermaidダイアグラムコンテナ */
+.mermaid {
+  background: var(--sl-color-gray-6);
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: center;
+}
