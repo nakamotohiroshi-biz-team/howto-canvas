@@ -4,11 +4,7 @@ description: Claude環境に独自機能を持たせる基本ステップ
 sidebar:
   order: 1
 ---
-
-import { Image } from 'astro:assets';
-import bannerImg from '../../../../assets/ai/claude-skills-banner.svg';
-
-<Image src={bannerImg} alt="Claudeスキル連携の概念図（NanoBanana生成）" />
+![Claudeスキル連携の概念図（NanoBanana生成）](../../../../assets/ai/claude-skills-banner.svg)
 
 ## 1. 処理の流れ
 

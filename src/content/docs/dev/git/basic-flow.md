@@ -4,11 +4,7 @@ description: 個人開発からチーム開発まで使える基本Git操作
 sidebar:
   order: 1
 ---
-
-import { Image } from 'astro:assets';
-import gitImg from '../../../../assets/dev/git-flow-diagram.svg';
-
-<Image src={gitImg} alt="Gitワークフロー図（NanoBanana生成）" />
+![Gitワークフロー図（NanoBanana生成）](../../../../assets/dev/git-flow-diagram.svg)
 
 ## 1. ワークフロー概要
 

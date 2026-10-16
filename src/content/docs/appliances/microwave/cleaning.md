@@ -4,11 +4,7 @@ description: 庫内の油汚れとにおいを浮かせてキレイにする手�
 sidebar:
   order: 1
 ---
-
-import { Image } from 'astro:assets';
-import steamImg from '../../../../assets/appliances/microwave-steam-guide.svg';
-
-<Image src={steamImg} alt="電子レンジ重曹清掃の手順イラスト（NanoBanana生成）" />
+![電子レンジ重曹清掃の手順イラスト（NanoBanana生成）](../../../../assets/appliances/microwave-steam-guide.svg)
 
 ## 1. 準備チェックリスト
 - [ ] 耐熱容器（マグカップまたは深めの小鉢）
