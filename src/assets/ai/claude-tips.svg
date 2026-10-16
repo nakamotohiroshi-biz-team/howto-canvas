@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Claude プロの裏技・活用テクニック</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">Artifactsのアプリ化、XMLタグ制御、思考プロセス引き出しで性能を極限まで引き出す</text>
+
+  <!-- Card 1: Artifactsアプリ化 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="105" width="225" height="270" rx="12" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="40" y="105" width="225" height="40" rx="12" fill="url(#cardGrad1)"/>
+    <text x="152" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">📱 即席Webアプリ開発</text>
+    
+    <circle cx="152" cy="185" r="28" fill="#0f172a" stroke="#f97316" stroke-width="2"/>
+    <text x="152" y="192" text-anchor="middle" fill="#f97316" font-size="20">💡</text>
+    
+    <text x="152" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">React / HTML 即時プレビュー</text>
+    <text x="60" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・React+TailwindでUI即生成</text>
+    <text x="60" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">・チャット内で直接操作テスト</text>
+    <text x="60" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・1クリックでコードをコピー</text>
+    <text x="152" y="355" text-anchor="middle" fill="#fb923c" font-family="sans-serif" font-size="11">裏技: SVGゲームや計算機の即時作成</text>
+  </g>
+
+  <!-- Card 2: XMLタグ制御 -->
+  <g filter="url(#shadow)">
+    <rect x="285" y="105" width="225" height="270" rx="12" fill="#1e293b" stroke="#2563eb" stroke-width="1.5"/>
+    <rect x="285" y="105" width="225" height="40" rx="12" fill="url(#cardGrad2)"/>
+    <text x="397" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🏷️ XMLタグで完全制御</text>
+    
+    <circle cx="397" cy="185" r="28" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+    <text x="397" y="192" text-anchor="middle" fill="#60a5fa" font-size="20">&lt;/&gt;</text>
+    
+    <text x="397" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">指示と入力の境界を明示</text>
+    <text x="305" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・&lt;instructions&gt; &lt;context&gt;</text>
+    <text x="305" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">・プロンプトインジェクション防止</text>
+    <text x="305" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・Claudeが最も正確に理解する記法</text>
+    <text x="397" y="355" text-anchor="middle" fill="#93c5fd" font-family="sans-serif" font-size="11">裏技: 出力タグを先に指定して即答化</text>
+  </g>
+
+  <!-- Card 3: 逆質問ハック -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="105" width="230" height="270" rx="12" fill="#1e293b" stroke="#059669" stroke-width="1.5"/>
+    <rect x="530" y="105" width="230" height="40" rx="12" fill="url(#cardGrad3)"/>
+    <text x="645" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🧠 逆質問＆思考引き出し</text>
+    
+    <circle cx="645" cy="185" r="28" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+    <text x="645" y="192" text-anchor="middle" fill="#34d399" font-size="20">💬</text>
+    
+    <text x="645" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">曖昧な要望をプロ品質に</text>
+    <text x="550" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・「最高の結果のために足りない</text>
+    <text x="550" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">　情報を5つ逆質問して」と指示</text>
+    <text x="550" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・&lt;thinking&gt;タグで推論ステップ強制</text>
+    <text x="645" y="355" text-anchor="middle" fill="#6ee7b7" font-family="sans-serif" font-size="11">裏技: Projectsに規約ファイル事前配置</text>
+  </g>
+</svg>

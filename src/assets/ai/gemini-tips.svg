@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="geminiGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="geminiGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="geminiGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#c026d3"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Google Gemini プロの裏技・活用テクニック</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">超長大200万トークン、Google Workspace直接連携、Canvas機能で圧倒的効率化</text>
+
+  <!-- Card 1: 200万トークン解析 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="105" width="225" height="270" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="40" y="105" width="225" height="40" rx="12" fill="url(#geminiGrad1)"/>
+    <text x="152" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">📚 200万トークン丸ごと投入</text>
+    
+    <circle cx="152" cy="185" r="28" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+    <text x="152" y="192" text-anchor="middle" fill="#60a5fa" font-size="20">🎬</text>
+    
+    <text x="152" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">1時間の動画・本10冊を即解析</text>
+    <text x="60" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・動画ファイルをそのまま投入</text>
+    <text x="60" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">・「何分何秒に何が起きたか」特定</text>
+    <text x="60" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・数百ページのPDFも要約いらず</text>
+    <text x="152" y="355" text-anchor="middle" fill="#93c5fd" font-family="sans-serif" font-size="11">裏技: 音声文字起こし＋議事録作成</text>
+  </g>
+
+  <!-- Card 2: Workspace連携 -->
+  <g filter="url(#shadow)">
+    <rect x="285" y="105" width="225" height="270" rx="12" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+    <rect x="285" y="105" width="225" height="40" rx="12" fill="url(#geminiGrad2)"/>
+    <text x="397" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🔗 Workspace (@メンション)</text>
+    
+    <circle cx="397" cy="185" r="28" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+    <text x="397" y="192" text-anchor="middle" fill="#22d3ee" font-size="20">@</text>
+    
+    <text x="397" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">Gmail / Driveを直接検索</text>
+    <text x="305" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・@Google Drive で社内資料を横断</text>
+    <text x="305" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">・@Gmail で先週の請求書を抽出</text>
+    <text x="305" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・@YouTube で関連動画を即リスト化</text>
+    <text x="397" y="355" text-anchor="middle" fill="#67e8f9" font-family="sans-serif" font-size="11">裏技: 検索の手間をゼロにする連携術</text>
+  </g>
+
+  <!-- Card 3: Canvas & ドキュメント -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="105" width="230" height="270" rx="12" fill="#1e293b" stroke="#c026d3" stroke-width="1.5"/>
+    <rect x="530" y="105" width="230" height="40" rx="12" fill="url(#geminiGrad3)"/>
+    <text x="645" y="131" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">🎨 Canvas でリアルタイム共創</text>
+    
+    <circle cx="645" cy="185" r="28" fill="#0f172a" stroke="#e879f9" stroke-width="2"/>
+    <text x="645" y="192" text-anchor="middle" fill="#e879f9" font-size="20">✍️</text>
+    
+    <text x="645" y="240" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">文章・コードを部分編集</text>
+    <text x="550" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・右側の専用エディタで直接推敲</text>
+    <text x="550" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">・気になる段落だけ選択して「短く」</text>
+    <text x="550" y="320" fill="#94a3b8" font-family="sans-serif" font-size="11">・1クリックでGoogleドキュメントへ出力</text>
+    <text x="645" y="355" text-anchor="middle" fill="#f0abfc" font-family="sans-serif" font-size="11">裏技: 長文記事の構成・校正が爆速化</text>
+  </g>
+</svg>
