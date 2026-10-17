@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181a20"/>
+      <stop offset="100%" stop-color="#1e222d"/>
+    </linearGradient>
+    <linearGradient id="stashGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="resetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="revertGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="amendGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="420" rx="16" fill="url(#bgGrad2)"/>
+
+  <!-- Title -->
+  <text x="380" y="40" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="18" font-weight="bold">Git「やらかした！」時の4大レスキュー早見表</text>
+
+  <!-- Grid 2x2 cards -->
+
+  <!-- Card 1: git stash -->
+  <g transform="translate(35, 65)">
+    <rect width="330" height="155" rx="12" fill="#222632" stroke="#eab308" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="12" fill="url(#stashGrad)"/>
+    <text x="165" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">1. 作業中なのに別の仕事を頼まれた時</text>
+    
+    <text x="18" y="60" fill="#fef08a" font-family="monospace" font-size="13" font-weight="bold">git stash</text>
+    <text x="18" y="85" fill="#cbd5e1" font-family="sans-serif" font-size="11">作業中の変更を一時退避してワーキングツリーを綺麗にする</text>
+
+    <text x="18" y="115" fill="#fde047" font-family="monospace" font-size="13" font-weight="bold">git stash pop</text>
+    <text x="18" y="138" fill="#cbd5e1" font-family="sans-serif" font-size="11">別件終了後、退避していた変更を手元に戻して再開！</text>
+  </g>
+
+  <!-- Card 2: git commit --amend -->
+  <g transform="translate(395, 65)">
+    <rect width="330" height="155" rx="12" fill="#222632" stroke="#06b6d4" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="12" fill="url(#amendGrad)"/>
+    <text x="165" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">2. 直前のコミット文やファイルを直したい時</text>
+    
+    <text x="18" y="60" fill="#a5f3fc" font-family="monospace" font-size="12" font-weight="bold">git commit --amend -m "正しいメッセージ"</text>
+    <text x="18" y="85" fill="#cbd5e1" font-family="sans-serif" font-size="11">直前のコミットメッセージを上書き修正できる</text>
+
+    <text x="18" y="115" fill="#a5f3fc" font-family="monospace" font-size="12" font-weight="bold">git add 忘れ物 &amp;&amp; git commit --amend --no-edit</text>
+    <text x="18" y="138" fill="#cbd5e1" font-family="sans-serif" font-size="11">入れ忘れた変更を直前のコミットに合体させる</text>
+  </g>
+
+  <!-- Card 3: git restore / reset -->
+  <g transform="translate(35, 235)">
+    <rect width="330" height="160" rx="12" fill="#222632" stroke="#ef4444" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="12" fill="url(#resetGrad)"/>
+    <text x="165" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">3. 変更を捨てたい・ステージングを外したい時</text>
+    
+    <text x="18" y="60" fill="#fca5a5" font-family="monospace" font-size="12" font-weight="bold">git restore &lt;ファイル名&gt;</text>
+    <text x="18" y="82" fill="#cbd5e1" font-family="sans-serif" font-size="11">未コミットの編集内容を完全に破棄して元通りに戻す</text>
+
+    <text x="18" y="108" fill="#fca5a5" font-family="monospace" font-size="12" font-weight="bold">git restore --staged &lt;ファイル名&gt;</text>
+    <text x="18" y="128" fill="#cbd5e1" font-family="sans-serif" font-size="11">誤って git add したファイルをステージから降ろす</text>
+    <text x="18" y="148" fill="#94a3b8" font-family="sans-serif" font-size="10">※ ファイルの編集内容は消えず安全に残ります</text>
+  </g>
+
+  <!-- Card 4: git revert -->
+  <g transform="translate(395, 235)">
+    <rect width="330" height="160" rx="12" fill="#222632" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="330" height="34" rx="12" fill="url(#revertGrad)"/>
+    <text x="165" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold">4. 共有済みリモートコミットを安全に取り消す時</text>
+    
+    <text x="18" y="60" fill="#ddd6fe" font-family="monospace" font-size="12" font-weight="bold">git revert &lt;コミットID&gt;</text>
+    <text x="18" y="82" fill="#cbd5e1" font-family="sans-serif" font-size="11">過去のコミットの「逆の変更」を行う新コミットを生成</text>
+
+    <text x="18" y="112" fill="#a78bfa" font-family="sans-serif" font-size="12" font-weight="bold">【チーム開発での最重要原則】</text>
+    <text x="18" y="132" fill="#cbd5e1" font-family="sans-serif" font-size="11">push済みの履歴は reset で消さず revert で打ち消す！</text>
+    <text x="18" y="148" fill="#94a3b8" font-family="sans-serif" font-size="10">仲間の履歴を壊さずに安全に取り消せます</text>
+  </g>
+</svg>

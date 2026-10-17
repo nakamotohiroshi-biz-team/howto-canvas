@@ -45,7 +45,16 @@ export default defineConfig({
         },
         {
           label: '開発・エンジニアリング',
-          items: [{ autogenerate: { directory: 'dev' } }],
+          items: [
+            {
+              label: 'Git バージョン管理',
+              items: [{ autogenerate: { directory: 'dev/git' } }],
+            },
+            {
+              label: 'GitHub & チーム開発',
+              items: [{ autogenerate: { directory: 'dev/github' } }],
+            },
+          ],
         },
       ],
       social: [

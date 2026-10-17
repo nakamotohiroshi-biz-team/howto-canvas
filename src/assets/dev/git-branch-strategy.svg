@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161922"/>
+      <stop offset="100%" stop-color="#212634"/>
+    </linearGradient>
+    <linearGradient id="mainLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="featureLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="protectGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="420" rx="16" fill="url(#bgGrad3)"/>
+
+  <!-- Title -->
+  <text x="380" y="38" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="18" font-weight="bold">チーム開発の標準モデル：GitHub Flow と ブランチ保護</text>
+
+  <!-- Main Flow Diagram -->
+  <g transform="translate(40, 65)">
+    <!-- Main branch bar -->
+    <rect x="0" y="140" width="680" height="8" rx="4" fill="url(#mainLineGrad)"/>
+    <text x="10" y="130" fill="#60a5fa" font-family="sans-serif" font-size="13" font-weight="bold">main ブランチ（常にデプロイ可能な本番安定版）</text>
+
+    <!-- Branch Protection Badge -->
+    <g transform="translate(420, 110)">
+      <rect width="250" height="24" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+      <text x="125" y="16" text-anchor="middle" fill="#fef08a" font-family="sans-serif" font-size="11" font-weight="bold">🛡️ ブランチ保護: 直接Push禁止 &amp; PR必須</text>
+    </g>
+
+    <!-- Main nodes -->
+    <circle cx="60" cy="144" r="12" fill="#2563eb" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="200" cy="144" r="10" fill="#2563eb"/>
+    <circle cx="480" cy="144" r="10" fill="#2563eb"/>
+    <circle cx="640" cy="144" r="14" fill="#3b82f6" stroke="#bfdbfe" stroke-width="3"/>
+    <text x="640" y="175" text-anchor="middle" fill="#93c5fd" font-family="sans-serif" font-size="11" font-weight="bold">v1.2.0 タグ</text>
+
+    <!-- Feature Branch Curve -->
+    <path d="M 60 144 C 90 60, 110 60, 150 60 L 450 60 C 470 60, 480 144, 480 144" fill="none" stroke="url(#featureLineGrad)" stroke-width="4"/>
+    <text x="160" y="45" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">feature/user-auth（作業用ブランチ）</text>
+
+    <!-- Feature nodes -->
+    <circle cx="200" cy="60" r="10" fill="#10b981"/>
+    <text x="200" y="85" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="10">コミット1</text>
+
+    <circle cx="290" cy="60" r="10" fill="#10b981"/>
+    <text x="290" y="85" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="10">コミット2</text>
+
+    <!-- PR & Review Box -->
+    <g transform="translate(350, 20)">
+      <rect width="110" height="42" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="55" y="18" text-anchor="middle" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="bold">プルリクエスト作成</text>
+      <text x="55" y="32" text-anchor="middle" fill="#a7f3d0" font-family="sans-serif" font-size="10">CI通過 &amp; レビュー承認</text>
+    </g>
+
+    <!-- Merge node -->
+    <circle cx="480" cy="144" r="14" fill="#8b5cf6" stroke="#c4b5fd" stroke-width="3"/>
+    <text x="480" y="175" text-anchor="middle" fill="#c4b5fd" font-family="sans-serif" font-size="11" font-weight="bold">マージ完了</text>
+  </g>
+
+  <!-- Bottom: 3 Core Rules of GitHub Flow -->
+  <g transform="translate(40, 260)">
+    <!-- Box 1 -->
+    <rect x="0" y="0" width="215" height="135" rx="10" fill="#1f2430" stroke="#333b4e" stroke-width="1"/>
+    <text x="18" y="30" fill="#60a5fa" font-family="sans-serif" font-size="13" font-weight="bold">1. mainは常に安定版</text>
+    <text x="18" y="55" fill="#cbd5e1" font-family="sans-serif" font-size="11">未完成コードやバグ混入を防ぐため、</text>
+    <text x="18" y="75" fill="#cbd5e1" font-family="sans-serif" font-size="11">mainへの直接プッシュは禁止。</text>
+    <text x="18" y="95" fill="#cbd5e1" font-family="sans-serif" font-size="11">いつでも本番へ安全にデプロイできる</text>
+    <text x="18" y="115" fill="#cbd5e1" font-family="sans-serif" font-size="11">最高品質を維持します。</text>
+
+    <!-- Box 2 -->
+    <rect x="232" y="0" width="215" height="135" rx="10" fill="#1f2430" stroke="#333b4e" stroke-width="1"/>
+    <text x="250" y="30" fill="#34d399" font-family="sans-serif" font-size="13" font-weight="bold">2. 作業は必ずブランチで</text>
+    <text x="250" y="55" fill="#cbd5e1" font-family="sans-serif" font-size="11">新機能や修正のたびに、</text>
+    <text x="250" y="75" fill="#cbd5e1" font-family="sans-serif" font-size="11">わかりやすい名前の作業ブランチを作成。</text>
+    <text x="250" y="95" fill="#34d399" font-family="monospace" font-size="11">feature/header-fix</text>
+    <text x="250" y="115" fill="#cbd5e1" font-family="sans-serif" font-size="11">個人部屋で安全に試行錯誤できます。</text>
+
+    <!-- Box 3 -->
+    <rect x="465" y="0" width="215" height="135" rx="10" fill="#1f2430" stroke="#333b4e" stroke-width="1"/>
+    <text x="483" y="30" fill="#a78bfa" font-family="sans-serif" font-size="13" font-weight="bold">3. PRで合流＆即削除</text>
+    <text x="483" y="55" fill="#cbd5e1" font-family="sans-serif" font-size="11">GitHub上でプルリクエストを作成し、</text>
+    <text x="483" y="75" fill="#cbd5e1" font-family="sans-serif" font-size="11">仲間のレビューと自動テストを通過。</text>
+    <text x="483" y="95" fill="#cbd5e1" font-family="sans-serif" font-size="11">マージされたら古いブランチは削除し、</text>
+    <text x="483" y="115" fill="#cbd5e1" font-family="sans-serif" font-size="11">リポジトリを常に清潔に保ちます。</text>
+  </g>
+</svg>
