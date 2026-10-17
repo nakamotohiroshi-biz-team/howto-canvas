@@ -1,103 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141720"/>
-      <stop offset="100%" stop-color="#1f2330"/>
+    <linearGradient id="bgGradPR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151821"/>
+      <stop offset="100%" stop-color="#1f2432"/>
     </linearGradient>
     <linearGradient id="prGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#1d4ed8"/>
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
     </linearGradient>
     <linearGradient id="reviewGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#047857"/>
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
     <linearGradient id="mergeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#6d28d9"/>
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="760" height="420" rx="16" fill="url(#bgGrad5)"/>
+  <rect width="760" height="440" rx="16" fill="url(#bgGradPR)"/>
 
   <!-- Title -->
-  <text x="380" y="38" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="bold">伝わるプルリクエスト（PR）作成術とコードレビュー作法</text>
+  <text x="380" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">伝わるプルリクエスト（PR）作成術とコードレビュー作法</text>
 
   <!-- 3 Columns Layout -->
 
   <!-- Col 1: Good PR Template -->
-  <g transform="translate(35, 65)">
-    <rect width="215" height="325" rx="12" fill="#202432" stroke="#3b82f6" stroke-width="1.5"/>
+  <g transform="translate(35, 60)">
+    <rect width="215" height="350" rx="12" fill="#1b202c" stroke="#3b82f6" stroke-width="1.5"/>
     <rect width="215" height="34" rx="12" fill="url(#prGrad)"/>
-    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">1. 承認されやすいPR</text>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">1. 承認されやすいPR</text>
 
-    <text x="15" y="60" fill="#93c5fd" font-family="sans-serif" font-size="11" font-weight="bold">【必須4大要素】</text>
+    <text x="15" y="60" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">【必須4大要素】</text>
 
-    <text x="15" y="85" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">① なぜ変更したか（背景）</text>
-    <text x="15" y="103" fill="#94a3b8" font-family="sans-serif" font-size="10">課題と目的、Issueリンク</text>
+    <text x="15" y="85" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">① なぜ変更したか（背景）</text>
+    <text x="15" y="103" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">課題と目的、Issueリンク</text>
 
-    <text x="15" y="128" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">② 何を変更したか（内容）</text>
-    <text x="15" y="146" fill="#94a3b8" font-family="sans-serif" font-size="10">主要な修正箇所の箇条書き</text>
+    <text x="15" y="130" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">② 何を変更したか（内容）</text>
+    <text x="15" y="148" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">主要な修正箇所の箇条書き</text>
 
-    <text x="15" y="171" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">③ どう確認できるか（検証手順）</text>
-    <text x="15" y="189" fill="#94a3b8" font-family="sans-serif" font-size="10">動作確認用URL・コマンド</text>
+    <text x="15" y="175" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">③ どう確認できるか（検証手順）</text>
+    <text x="15" y="193" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">動作確認用URL・コマンド</text>
 
-    <text x="15" y="214" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">④ 見た目の変化（画像・GIF）</text>
-    <text x="15" y="232" fill="#94a3b8" font-family="sans-serif" font-size="10">Before / After のスクショ</text>
+    <text x="15" y="220" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">④ 見た目の変化（画像・GIF）</text>
+    <text x="15" y="238" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Before / After のスクショ</text>
 
-    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
-    <text x="107" y="280" text-anchor="middle" fill="#60a5fa" font-family="sans-serif" font-size="10" font-weight="bold">💡 Draft PR を活用</text>
-    <text x="107" y="298" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="9">作業途中で早期に方針相談！</text>
+    <rect x="15" y="270" width="185" height="58" rx="8" fill="#0f172a" stroke="#1e293b"/>
+    <text x="107" y="292" text-anchor="middle" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">[推奨] Draft PR を活用</text>
+    <text x="107" y="312" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">作業途中で早期に方針相談！</text>
   </g>
 
   <!-- Col 2: Code Review Etiquette -->
-  <g transform="translate(272, 65)">
-    <rect width="215" height="325" rx="12" fill="#202432" stroke="#10b981" stroke-width="1.5"/>
+  <g transform="translate(272, 60)">
+    <rect width="215" height="350" rx="12" fill="#1b202c" stroke="#10b981" stroke-width="1.5"/>
     <rect width="215" height="34" rx="12" fill="url(#reviewGrad)"/>
-    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">2. 敬意を込めたレビュー作法</text>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">2. 敬意を込めたレビュー作法</text>
 
-    <text x="15" y="60" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="bold">【定番ラベルプレフィックス】</text>
+    <text x="15" y="60" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">【定番ラベルプレフィックス】</text>
 
-    <text x="15" y="85" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">[LGTM]</text>
-    <text x="15" y="103" fill="#cbd5e1" font-family="sans-serif" font-size="10">Looks Good To Me（完璧・承認！）</text>
+    <text x="15" y="85" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="bold">[LGTM]</text>
+    <text x="15" y="103" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Looks Good To Me（完璧・承認！）</text>
 
-    <text x="15" y="128" fill="#fbbf24" font-family="monospace" font-size="11" font-weight="bold">[Must]</text>
-    <text x="15" y="146" fill="#cbd5e1" font-family="sans-serif" font-size="10">バグ・セキュリティ等、修正必須</text>
+    <text x="15" y="130" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="bold">[Must]</text>
+    <text x="15" y="148" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">バグ・セキュリティ等、修正必須</text>
 
-    <text x="15" y="171" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">[IMO / Suggestion]</text>
-    <text x="15" y="189" fill="#cbd5e1" font-family="sans-serif" font-size="10">私の私見・改善案（任意対応）</text>
+    <text x="15" y="175" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="bold">[IMO / Suggestion]</text>
+    <text x="15" y="193" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">私の私見・改善提案（任意対応）</text>
 
-    <text x="15" y="214" fill="#a78bfa" font-family="monospace" font-size="11" font-weight="bold">[Nit / typo]</text>
-    <text x="15" y="232" fill="#cbd5e1" font-family="sans-serif" font-size="10">細かな誤字（直さなくてもOK）</text>
+    <text x="15" y="220" fill="#a78bfa" font-family="Consolas, monospace" font-size="11" font-weight="bold">[Nit / typo]</text>
+    <text x="15" y="238" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">些細な誤字（直さなくてもOK）</text>
 
-    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
-    <text x="107" y="280" text-anchor="middle" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold">人ではなくコードに向き合う</text>
-    <text x="107" y="298" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="9">「〜してください」より「〜はどう？」</text>
+    <rect x="15" y="270" width="185" height="58" rx="8" fill="#0f172a" stroke="#1e293b"/>
+    <text x="107" y="292" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">人ではなくコードに向き合う</text>
+    <text x="107" y="312" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">「〜してください」より「〜はどう？」</text>
   </g>
 
   <!-- Col 3: Merge Strategies -->
-  <g transform="translate(510, 65)">
-    <rect width="215" height="325" rx="12" fill="#202432" stroke="#8b5cf6" stroke-width="1.5"/>
+  <g transform="translate(510, 60)">
+    <rect width="215" height="350" rx="12" fill="#1b202c" stroke="#8b5cf6" stroke-width="1.5"/>
     <rect width="215" height="34" rx="12" fill="url(#mergeGrad)"/>
-    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">3. 3つのマージ方式</text>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">3. 3つのマージ方式</text>
 
-    <text x="15" y="60" fill="#c4b5fd" font-family="sans-serif" font-size="11" font-weight="bold">【用途に合わせた選び方】</text>
+    <text x="15" y="60" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">【用途に合わせた選び方】</text>
 
-    <text x="15" y="85" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">① Squash and merge</text>
-    <text x="15" y="103" fill="#a78bfa" font-family="sans-serif" font-size="10" font-weight="bold">【チーム開発で最も推奨】</text>
-    <text x="15" y="118" fill="#94a3b8" font-family="sans-serif" font-size="10">作業中の無数のコミットを1つに</text>
-    <text x="15" y="132" fill="#94a3b8" font-family="sans-serif" font-size="10">綺麗にまとめてmainに合流！</text>
+    <text x="15" y="85" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">① Squash and merge</text>
+    <text x="15" y="103" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold">【チーム開発で最も推奨】</text>
+    <text x="15" y="118" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">多数のコミットを1つにまとめて</text>
+    <text x="15" y="132" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">mainの履歴を清潔に保つ！</text>
 
-    <text x="15" y="157" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">② Create a merge commit</text>
-    <text x="15" y="175" fill="#94a3b8" font-family="sans-serif" font-size="10">すべてのコミット履歴をそのまま</text>
-    <text x="15" y="189" fill="#94a3b8" font-family="sans-serif" font-size="10">残したい大規模開発向け</text>
+    <text x="15" y="160" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">② Create a merge commit</text>
+    <text x="15" y="178" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">全コミット履歴をそのまま残す</text>
+    <text x="15" y="192" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">大規模・長期開発向け</text>
 
-    <text x="15" y="214" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">③ Rebase and merge</text>
-    <text x="15" y="232" fill="#94a3b8" font-family="sans-serif" font-size="10">履歴を一本の直線にして合流</text>
+    <text x="15" y="220" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">③ Rebase and merge</text>
+    <text x="15" y="238" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">履歴を一本の直線にして合流</text>
 
-    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
-    <text x="107" y="280" text-anchor="middle" fill="#c4b5fd" font-family="sans-serif" font-size="10" font-weight="bold">迷ったら Squash が安全</text>
-    <text x="107" y="298" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="9">mainの履歴が常にすっきりします</text>
+    <rect x="15" y="270" width="185" height="58" rx="8" fill="#0f172a" stroke="#1e293b"/>
+    <text x="107" y="292" text-anchor="middle" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">迷ったら Squash が安全</text>
+    <text x="107" y="312" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">mainの履歴が常にすっきりします</text>
   </g>
 </svg>

@@ -1,100 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#181a24"/>
-      <stop offset="100%" stop-color="#232838"/>
+    <linearGradient id="bgGradIP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151821"/>
+      <stop offset="100%" stop-color="#1f2432"/>
     </linearGradient>
-    <linearGradient id="todoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#64748b"/>
-      <stop offset="100%" stop-color="#475569"/>
+    <linearGradient id="doneGradIP" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
-    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
-    <linearGradient id="doneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#059669"/>
-    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="760" height="420" rx="16" fill="url(#bgGrad4)"/>
+  <rect width="760" height="450" rx="16" fill="url(#bgGradIP)"/>
 
   <!-- Title -->
-  <text x="380" y="38" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="bold">GitHub Issues &amp; Projects を使ったチームタスク管理術</text>
+  <text x="380" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="bold">GitHub Issues ＆ Projects を使ったチームタスク管理術</text>
 
-  <!-- Left: Issue to PR flow -->
-  <g transform="translate(35, 65)">
+  <!-- Left: Issue to PR flow (3 Columns) -->
+  <g transform="translate(35, 60)">
     <!-- Column 1: Issue -->
-    <rect x="0" y="0" width="200" height="200" rx="10" fill="#1e222e" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="200" height="215" rx="10" fill="#1b202c" stroke="#38bdf8" stroke-width="1.5"/>
     <rect x="0" y="0" width="200" height="32" rx="10" fill="#0284c7"/>
-    <text x="100" y="21" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">1. Issue（課題・要望）</text>
+    <text x="100" y="21" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">1. Issue（課題・要望）</text>
 
-    <text x="15" y="60" fill="#e0f2fe" font-family="sans-serif" font-size="12" font-weight="bold">#102 ログイン画面の作成</text>
-    <text x="15" y="85" fill="#94a3b8" font-family="sans-serif" font-size="11">・担当者: @yamada</text>
-    <text x="15" y="105" fill="#94a3b8" font-family="sans-serif" font-size="11">・ラベル: feature, frontend</text>
-    <text x="15" y="125" fill="#94a3b8" font-family="sans-serif" font-size="11">・マイルストーン: v1.0</text>
+    <text x="15" y="60" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">#102 ログイン画面の作成</text>
+    <text x="15" y="86" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">・担当者: @yamada</text>
+    <text x="15" y="108" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">・ラベル: feature, auth</text>
+    <text x="15" y="130" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">・期限: v1.0 リリース</text>
     
-    <rect x="15" y="145" width="170" height="40" rx="6" fill="#0f172a"/>
-    <text x="100" y="162" text-anchor="middle" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="bold">「Create a branch」</text>
-    <text x="100" y="177" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="10">ワンクリックでブランチ作成</text>
+    <rect x="15" y="152" width="170" height="44" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="100" y="170" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">「Create a branch」</text>
+    <text x="100" y="186" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">ワンクリックでブランチ作成</text>
 
-    <!-- Arrow -->
-    <path d="M 205 100 L 235 100" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Arrow 1 to 2 -->
+    <line x1="205" y1="108" x2="238" y2="108" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)"/>
 
     <!-- Column 2: Branch & PR -->
-    <rect x="245" y="0" width="200" height="200" rx="10" fill="#1e222e" stroke="#a855f7" stroke-width="1.5"/>
+    <rect x="245" y="0" width="200" height="215" rx="10" fill="#1b202c" stroke="#a855f7" stroke-width="1.5"/>
     <rect x="245" y="0" width="200" height="32" rx="10" fill="#7c3aed"/>
-    <text x="345" y="21" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">2. PR（プルリクエスト）</text>
+    <text x="345" y="21" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">2. PR（プルリクエスト）</text>
 
-    <text x="260" y="60" fill="#f3e8ff" font-family="sans-serif" font-size="12" font-weight="bold">102-login-page ブランチ</text>
-    <text x="260" y="85" fill="#c084fc" font-family="monospace" font-size="11" font-weight="bold">Closes #102</text>
-    <text x="260" y="105" fill="#cbd5e1" font-family="sans-serif" font-size="11">PR本文に記載することで</text>
-    <text x="260" y="125" fill="#cbd5e1" font-family="sans-serif" font-size="11">Issueと自動リンク！</text>
+    <text x="260" y="60" fill="#f3e8ff" font-family="Consolas, monospace" font-size="11" font-weight="bold">branch: 102-login-page</text>
+    <rect x="260" y="72" width="100" height="22" rx="4" fill="#581c87"/>
+    <text x="310" y="87" text-anchor="middle" fill="#f3e8ff" font-family="Consolas, monospace" font-size="11" font-weight="bold">Closes #102</text>
+    <text x="260" y="112" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PR本文にキーワード記載で</text>
+    <text x="260" y="130" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Issueと自動リンク！</text>
 
-    <rect x="260" y="145" width="170" height="40" rx="6" fill="#0f172a"/>
-    <text x="345" y="162" text-anchor="middle" fill="#c084fc" font-family="sans-serif" font-size="10" font-weight="bold">CI自動テスト実行中</text>
-    <text x="345" y="177" text-anchor="middle" fill="#34d399" font-family="sans-serif" font-size="10">All checks passed ✓</text>
+    <rect x="260" y="152" width="170" height="44" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="345" y="170" text-anchor="middle" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold">CI自動テスト実行中</text>
+    <text x="345" y="186" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">All checks passed</text>
 
-    <!-- Arrow -->
-    <path d="M 450 100 L 480 100" stroke="#10b981" stroke-width="2"/>
+    <!-- Arrow 2 to 3 -->
+    <line x1="450" y1="108" x2="482" y2="108" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
 
     <!-- Column 3: Auto Close -->
-    <rect x="490" y="0" width="200" height="200" rx="10" fill="#1e222e" stroke="#10b981" stroke-width="1.5"/>
-    <rect x="490" y="0" width="200" height="32" rx="10" fill="url(#doneGrad)"/>
-    <text x="590" y="21" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">3. マージ &amp; 自動完了</text>
+    <rect x="490" y="0" width="200" height="215" rx="10" fill="#1b202c" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="490" y="0" width="200" height="32" rx="10" fill="url(#doneGradIP)"/>
+    <text x="590" y="21" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">3. マージ ＆ 自動完了</text>
 
-    <text x="505" y="60" fill="#d1fae5" font-family="sans-serif" font-size="12" font-weight="bold">PRマージ完了！</text>
-    <text x="505" y="85" fill="#cbd5e1" font-family="sans-serif" font-size="11">PRがmainにマージされると、</text>
-    <text x="505" y="105" fill="#34d399" font-family="sans-serif" font-size="11">紐づいた Issue #102 も</text>
-    <text x="505" y="125" fill="#34d399" font-family="sans-serif" font-size="11">自動で「Closed」に移行！</text>
+    <text x="505" y="60" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">PRマージ完了！</text>
+    <text x="505" y="86" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PRがmainに合流すると、</text>
+    <text x="505" y="108" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">紐づいた Issue #102 も</text>
+    <text x="505" y="130" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">自動で「Closed」に移行！</text>
 
-    <rect x="505" y="145" width="170" height="40" rx="6" fill="#0f172a"/>
-    <text x="590" y="170" text-anchor="middle" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">手動更新の手間ゼロ！</text>
+    <rect x="505" y="152" width="170" height="44" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="590" y="178" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">手動更新の手間ゼロ！</text>
   </g>
 
   <!-- Bottom: GitHub Projects (Kanban Board) -->
-  <g transform="translate(35, 280)">
-    <rect width="690" height="115" rx="10" fill="#1b1f2b" stroke="#333b4e" stroke-width="1"/>
-    <text x="20" y="25" fill="#94a3b8" font-family="sans-serif" font-size="12" font-weight="bold">【GitHub Projects】チーム全体の進捗をひと目で可視化するカンバンボード</text>
+  <g transform="translate(35, 295)">
+    <rect width="690" height="135" rx="10" fill="#161b26" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">【GitHub Projects】チーム全体の進捗をひと目で可視化するカンバンボード</text>
 
     <!-- Todo col -->
-    <rect x="20" y="38" width="205" height="65" rx="6" fill="#242938"/>
-    <text x="32" y="55" fill="#94a3b8" font-family="sans-serif" font-size="11" font-weight="bold">📋 Todo（未着手）</text>
-    <text x="32" y="74" fill="#cbd5e1" font-family="sans-serif" font-size="10">#104 パスワード再設定画面</text>
-    <text x="32" y="90" fill="#cbd5e1" font-family="sans-serif" font-size="10">#105 利用規約ページの追加</text>
+    <rect x="20" y="38" width="205" height="82" rx="6" fill="#1f2533" stroke="#334155" stroke-width="1"/>
+    <rect x="30" y="48" width="10" height="10" rx="2" fill="#64748b"/>
+    <text x="48" y="57" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Todo（未着手）</text>
+    <text x="30" y="78" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">#104 パスワード再設定画面</text>
+    <text x="30" y="98" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">#105 利用規約ページの追加</text>
 
     <!-- In Progress col -->
-    <rect x="242" y="38" width="205" height="65" rx="6" fill="#242938"/>
-    <text x="254" y="55" fill="#f59e0b" font-family="sans-serif" font-size="11" font-weight="bold">⚡ In Progress（作業中）</text>
-    <text x="254" y="74" fill="#fef08a" font-family="sans-serif" font-size="10">#102 ログイン画面の作成</text>
-    <text x="254" y="90" fill="#cbd5e1" font-family="sans-serif" font-size="10">PR #103 がレビュー中</text>
+    <rect x="242" y="38" width="205" height="82" rx="6" fill="#1f2533" stroke="#f59e0b" stroke-width="1"/>
+    <circle cx="35" cy="53" r="5" fill="#f59e0b"/>
+    <text x="270" y="57" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">In Progress（作業中）</text>
+    <text x="252" y="78" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">#102 ログイン画面の作成</text>
+    <text x="252" y="98" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">PR #103 がレビュー中</text>
 
     <!-- Done col -->
-    <rect x="465" y="38" width="205" height="65" rx="6" fill="#242938"/>
-    <text x="477" y="55" fill="#10b981" font-family="sans-serif" font-size="11" font-weight="bold">✅ Done（完了）</text>
-    <text x="477" y="74" fill="#6ee7b7" font-family="sans-serif" font-size="10">#101 ユーザーモデル設計</text>
-    <text x="477" y="90" fill="#6ee7b7" font-family="sans-serif" font-size="10">#98 プロジェクト初期構成</text>
+    <rect x="465" y="38" width="205" height="82" rx="6" fill="#1f2533" stroke="#10b981" stroke-width="1"/>
+    <circle cx="480" cy="53" r="5" fill="#10b981"/>
+    <text x="493" y="57" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Done（完了）</text>
+    <text x="475" y="78" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">#101 ユーザーモデル設計</text>
+    <text x="475" y="98" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">#98 初期リポジトリ構成</text>
   </g>
 </svg>
