@@ -54,6 +54,10 @@ export default defineConfig({
               label: 'GitHub & チーム開発',
               items: [{ autogenerate: { directory: 'dev/github' } }],
             },
+            {
+              label: 'ネットワーク',
+              items: [{ autogenerate: { directory: 'dev/network' } }],
+            },
           ],
         },
         {
