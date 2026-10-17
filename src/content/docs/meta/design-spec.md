@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-![HowTo Canvas サイト設計書](../../../../assets/meta/system-architecture.svg)
+![HowTo Canvas サイト設計書](../../../assets/meta/system-architecture.svg)
 
 本書は、ナレッジベースサイト「HowTo Canvas」のシステム構成、技術スタック、情報アーキテクチャ、デザインシステム、および運用保守に関する基本設計書です。
 

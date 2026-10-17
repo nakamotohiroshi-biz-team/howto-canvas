@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-![HowTo Canvas 取扱説明書の全体サイクル](../../../../assets/meta/manual-flow.svg)
+![HowTo Canvas 取扱説明書の全体サイクル](../../../assets/meta/manual-flow.svg)
 
 HowTo Canvas（ハウツー・キャンバス）へようこそ。
 本サイトは、最先端の生成AI（Claude、Gemini、Gemini Notebook/NotebookLM）と、モダンな開発ツール（Git/GitHub）の実践活用ナレッジを、初心者にも分かりやすい図解と具体的なステップで整理したナレッジベースです。
