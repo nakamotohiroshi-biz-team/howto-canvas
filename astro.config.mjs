@@ -8,8 +8,8 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: 'HowTo Canvas ｜ AI実践ナレッジ',
-      description: 'Claude、Gemini、NotebookLM、MCPの実践活用ナレッジベース',
+      title: 'HowTo Canvas ｜ AI＆開発ナレッジ',
+      description: 'Claude、Gemini、Gemini Notebook、Git等の実践活用ナレッジベース',
       defaultLocale: 'root',
       locales: {
         root: {
@@ -27,7 +27,11 @@ export default defineConfig({
           items: [{ autogenerate: { directory: 'ai/gemini' } }],
         },
         {
-          label: '共通',
+          label: 'Gemini Notebook (NotebookLM)',
+          items: [{ autogenerate: { directory: 'ai/notebooklm' } }],
+        },
+        {
+          label: '共通・連携（MCP）',
           items: [
             {
               label: 'スキル共有・コピー方法',
@@ -37,11 +41,11 @@ export default defineConfig({
               label: 'MCP（共通ツール規格）',
               items: [{ autogenerate: { directory: 'ai/mcp' } }],
             },
-            {
-              label: 'NotebookLM（音声・資料解析）',
-              items: [{ autogenerate: { directory: 'ai/notebooklm' } }],
-            },
           ],
+        },
+        {
+          label: '開発・エンジニアリング',
+          items: [{ autogenerate: { directory: 'dev' } }],
         },
       ],
       social: [

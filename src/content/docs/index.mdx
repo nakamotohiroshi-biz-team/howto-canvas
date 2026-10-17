@@ -1,0 +1,37 @@
+---
+title: HowTo Canvas ｜ AI＆開発実践ナレッジ
+description: Claude、Gemini、Gemini Notebook（NotebookLM）、開発・Gitの実践活用ナレッジベース
+template: splash
+hero:
+  tagline: 最先端AIモデルと開発ツールの実践活用法を、直感的な図解とステップで整理する
+  image:
+    file: ../../assets/hero-banner.svg
+    alt: HowTo Canvas キービジュアル
+  actions:
+    - text: Claude 活用ガイドを見る
+      link: /howto-canvas/ai/claude/tips-and-tricks/
+      icon: right-arrow
+      variant: primary
+    - text: 開発・Gitガイドを見る
+      link: /howto-canvas/dev/git/basic-flow/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## カテゴリ別ナレッジ
+
+<CardGrid stagger>
+  <Card icon="laptop" title="1. Claude">
+    最新の裏技大全、自律型エージェント「Claude Code」、独自スキル定義、Artifactsでのアプリ開発、生文字起こしからの高品質議事録整形。
+  </Card>
+  <Card icon="star" title="2. Gemini">
+    最新の裏技大全、自律型リサーチ「Deep Research」、Canvasによる部分推敲、カスタムGem作成、スプレッドシート=AI()関数、200万トークン動画解析。
+  </Card>
+  <Card icon="document" title="3. Gemini Notebook (NotebookLM)">
+    会議音声からの自動文字起こし＆議事録・報告書作成、ハルシネーションゼロのソース限定回答、ポッドキャスト対談生成。
+  </Card>
+  <Card icon="setting" title="4. 開発・エンジニアリング">
+    Git基本データフロー、GitHubチーム開発・プルリクエスト（PR）運用、日常コマンド早見表チートシート。
+  </Card>
+</CardGrid>

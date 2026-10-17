@@ -1,16 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="100%" height="100%">
   <defs>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8"/>
-    </linearGradient>
-    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a"/>
       <stop offset="100%" stop-color="#1e1b4b"/>
     </linearGradient>
-    
-    <!-- 3 Category Gradients -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
     <linearGradient id="claudeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ea580c"/>
       <stop offset="100%" stop-color="#c2410c"/>
@@ -19,84 +18,76 @@
       <stop offset="0%" stop-color="#2563eb"/>
       <stop offset="100%" stop-color="#4f46e5"/>
     </linearGradient>
-    <linearGradient id="commonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981"/>
+    <linearGradient id="notebookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
+    <linearGradient id="devGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
 
-    <filter id="heroShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#6366f1" flood-opacity="0.3"/>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
     </filter>
   </defs>
 
-  <!-- Central Slate Frame -->
-  <g filter="url(#heroShadow)">
-    <rect x="30" y="30" width="640" height="420" rx="20" fill="url(#boxGrad)" stroke="url(#glowGrad)" stroke-width="2"/>
+  <rect width="700" height="480" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Top Slate Bar -->
+  <rect x="35" y="30" width="630" height="40" rx="12" fill="#1e293b"/>
+  <circle cx="60" cy="50" r="5" fill="#ef4444"/>
+  <circle cx="76" cy="50" r="5" fill="#f59e0b"/>
+  <circle cx="92" cy="50" r="5" fill="#10b981"/>
+  <text x="350" y="55" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="bold">HowTo Canvas ｜ AI ＆ 開発ナレッジハブ</text>
+
+  <!-- 4 Category Cards Grid (2x2) -->
+
+  <!-- Card 1: Claude -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="90" width="280" height="160" rx="12" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="55" y="90" width="280" height="34" rx="12" fill="url(#claudeGrad)"/>
+    <text x="195" y="112" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">1. Claude</text>
     
-    <!-- Slate Top Navigation -->
-    <rect x="30" y="30" width="640" height="42" rx="20" fill="#1e293b"/>
-    <circle cx="60" cy="51" r="5" fill="#ef4444"/>
-    <circle cx="76" cy="51" r="5" fill="#f59e0b"/>
-    <circle cx="92" cy="51" r="5" fill="#10b981"/>
-    <text x="350" y="56" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="13" font-weight="bold">AI Knowledge Hub ｜ Claude ・ Gemini ・ 共通</text>
+    <text x="75" y="150" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">・最新裏技大全 / Think harder</text>
+    <text x="75" y="175" fill="#e2e8f0" font-family="sans-serif" font-size="11">・自律型 Claude Code ガイド</text>
+    <text x="75" y="200" fill="#e2e8f0" font-family="sans-serif" font-size="11">・文字起こし高精度議事録整形</text>
+    <text x="75" y="225" fill="#94a3b8" font-family="sans-serif" font-size="10">Artifacts即席アプリ・Projects固定</text>
+  </g>
 
-    <!-- 3 Big Category Columns -->
+  <!-- Card 2: Gemini -->
+  <g filter="url(#shadow)">
+    <rect x="365" y="90" width="280" height="160" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="365" y="90" width="280" height="34" rx="12" fill="url(#geminiGrad)"/>
+    <text x="505" y="112" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">2. Gemini</text>
+    
+    <text x="385" y="150" fill="#60a5fa" font-family="sans-serif" font-size="12" font-weight="bold">・最新裏技大全 / Deep Research</text>
+    <text x="385" y="175" fill="#e2e8f0" font-family="sans-serif" font-size="11">・Canvas リアルタイム共同推敲</text>
+    <text x="385" y="200" fill="#e2e8f0" font-family="sans-serif" font-size="11">・スプレッドシート =AI() 関数</text>
+    <text x="385" y="225" fill="#94a3b8" font-family="sans-serif" font-size="10">200万トークン動画音声解析・Gemini Live</text>
+  </g>
 
-    <!-- Column 1: Claude -->
-    <g>
-      <rect x="55" y="95" width="185" height="325" rx="14" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
-      <rect x="55" y="95" width="185" height="40" rx="14" fill="url(#claudeGrad)"/>
-      <text x="147" y="121" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">Claude</text>
-      
-      <circle cx="147" cy="175" r="22" fill="#0f172a" stroke="#fb923c" stroke-width="2"/>
-      <text x="147" y="183" text-anchor="middle" fill="#fb923c" font-size="18">🧠</text>
-      
-      <text x="70" y="225" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・最新裏技大全</text>
-      <text x="70" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">Think harder / 逆質問</text>
-      <text x="70" y="275" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・自律型 Claude Code</text>
-      <text x="70" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">Plan mode / ESC割り込み</text>
-      <text x="70" y="325" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・Artifacts Webアプリ</text>
-      <text x="70" y="345" fill="#94a3b8" font-family="sans-serif" font-size="11">リアルタイム部分推敲</text>
-      <text x="70" y="375" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・高品質議事録整形</text>
-      <text x="70" y="395" fill="#94a3b8" font-family="sans-serif" font-size="11">&lt;transcript&gt;構造化</text>
-    </g>
+  <!-- Card 3: Gemini Notebook -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="270" width="280" height="160" rx="12" fill="#1e293b" stroke="#059669" stroke-width="1.5"/>
+    <rect x="55" y="270" width="280" height="34" rx="12" fill="url(#notebookGrad)"/>
+    <text x="195" y="292" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">3. Gemini Notebook (NotebookLM)</text>
+    
+    <text x="75" y="330" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">・音声から文字起こし＆議事録</text>
+    <text x="75" y="355" fill="#e2e8f0" font-family="sans-serif" font-size="11">・ハルシネーションゼロの出典回答</text>
+    <text x="75" y="380" fill="#e2e8f0" font-family="sans-serif" font-size="11">・音声ポッドキャスト対談生成</text>
+    <text x="75" y="405" fill="#94a3b8" font-family="sans-serif" font-size="10">会議録音をドラッグ＆ドロップで一発作成</text>
+  </g>
 
-    <!-- Column 2: Gemini -->
-    <g>
-      <rect x="257" y="95" width="185" height="325" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
-      <rect x="257" y="95" width="185" height="40" rx="14" fill="url(#geminiGrad)"/>
-      <text x="349" y="121" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">Gemini</text>
-      
-      <circle cx="349" cy="175" r="22" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
-      <text x="349" y="183" text-anchor="middle" fill="#60a5fa" font-size="18">✨</text>
-      
-      <text x="272" y="225" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・最新裏技大全</text>
-      <text x="272" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">自作Gem / 一時チャット</text>
-      <text x="272" y="275" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・Deep Research</text>
-      <text x="272" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">多段階の自動徹底調査</text>
-      <text x="272" y="325" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・Workspace &amp; =AI()</text>
-      <text x="272" y="345" fill="#94a3b8" font-family="sans-serif" font-size="11">Gmail / スプレッドシート</text>
-      <text x="272" y="375" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・Canvas 共同推敲</text>
-      <text x="272" y="395" fill="#94a3b8" font-family="sans-serif" font-size="11">部分編集 &amp; ドキュメント出力</text>
-    </g>
-
-    <!-- Column 3: 共通 -->
-    <g>
-      <rect x="460" y="95" width="185" height="325" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
-      <rect x="460" y="95" width="185" height="40" rx="14" fill="url(#commonGrad)"/>
-      <text x="552" y="121" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">共通</text>
-      
-      <circle cx="552" cy="175" r="22" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
-      <text x="552" y="183" text-anchor="middle" fill="#34d399" font-size="18">🔌</text>
-      
-      <text x="475" y="225" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・スキル共有・コピー</text>
-      <text x="475" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">モデル間のプロンプト移行</text>
-      <text x="475" y="275" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・MCP 完全ガイド</text>
-      <text x="475" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">共通ツール規格の接続設定</text>
-      <text x="475" y="325" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・NotebookLM 解析</text>
-      <text x="475" y="345" fill="#94a3b8" font-family="sans-serif" font-size="11">音声から議事録・報告書化</text>
-      <text x="475" y="375" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">・出典付き回答検証</text>
-      <text x="475" y="395" fill="#94a3b8" font-family="sans-serif" font-size="11">ハルシネーションゼロ活用</text>
-    </g>
+  <!-- Card 4: 開発・エンジニアリング -->
+  <g filter="url(#shadow)">
+    <rect x="365" y="270" width="280" height="160" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect x="365" y="270" width="280" height="34" rx="12" fill="url(#devGrad)"/>
+    <text x="505" y="292" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">4. 開発・エンジニアリング</text>
+    
+    <text x="385" y="330" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">・Git 基本データフロー4領域</text>
+    <text x="385" y="355" fill="#e2e8f0" font-family="sans-serif" font-size="11">・GitHub チーム開発＆プルリク運用</text>
+    <text x="385" y="380" fill="#e2e8f0" font-family="sans-serif" font-size="11">・日常コマンド早見表チートシート</text>
+    <text x="385" y="405" fill="#94a3b8" font-family="sans-serif" font-size="10">ブランチ作成からレビュー・安全なマージ</text>
   </g>
 </svg>
