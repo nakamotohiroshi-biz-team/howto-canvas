@@ -8,8 +8,8 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: 'HowTo Canvas',
-      description: 'モノとツールの使い方ナレッジ',
+      title: 'HowTo Canvas ｜ AI実践ナレッジ',
+      description: 'Claude、Gemini、NotebookLM、MCPの実践活用ナレッジベース',
       defaultLocale: 'root',
       locales: {
         root: {
@@ -19,12 +19,24 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'AI ツールの使い方',
-          items: [{ autogenerate: { directory: 'ai' } }],
+          label: 'Claude 活用ガイド',
+          items: [{ autogenerate: { directory: 'ai/claude' } }],
         },
         {
-          label: '開発・エンジニアリング',
-          items: [{ autogenerate: { directory: 'dev' } }],
+          label: 'Gemini 活用ガイド',
+          items: [{ autogenerate: { directory: 'ai/gemini' } }],
+        },
+        {
+          label: 'NotebookLM 活用ガイド',
+          items: [{ autogenerate: { directory: 'ai/notebooklm' } }],
+        },
+        {
+          label: 'MCP（Model Context Protocol）',
+          items: [{ autogenerate: { directory: 'ai/mcp' } }],
+        },
+        {
+          label: 'モデル間連携・スキル共有',
+          items: [{ slug: 'ai/gemini-claude-sharing' }],
         },
       ],
       social: [
