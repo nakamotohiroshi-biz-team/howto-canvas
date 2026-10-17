@@ -22,7 +22,7 @@ graph LR
         B[Gemini / Antigravity]
     end
     subgraph MCP Protocol
-        C[MCP Client] <-->|JSON-RPC stdio/SSE| D[MCP Server]
+        C[MCP Client] <-->|JSON-RPC stdio/Streamable HTTP| D[MCP Server]
     end
     subgraph External World
         D --> E[ローカルファイル操作]
@@ -36,7 +36,7 @@ graph LR
 
 - 開発効率の最大化: 1つのMCPサーバーを作れば、GeminiでもClaudeでも同じツールが即座に使えます。
 - 安全なローカル実行: APIキーや認証情報をサーバー側に集約し、AIクライアントに安全に機能だけを渡せます。
-- エコシステムの活用: コミュニティが公開しているGitHub、Slack、SQLite、Puppeteerなどの公式MCPサーバーをコマンド1行で導入できます。
+- エコシステムの活用: Filesystem、Fetch、Memoryなどの公式MCPサーバーや、各社が公開しているMCPサーバーをコマンド1行で導入できます。
 
 ## 2. 初期セットアップの手順（全体像）
 
@@ -82,7 +82,9 @@ Claude DesktopアプリにMCPサーバーを接続する設定手順です。
 Geminiエコシステム（Antigravity IDEやGemini CLI）でも同様のMCP構成を利用できます。
 
 ### 設定ファイルの場所
-プロジェクト直下の `.antigravity/mcp_config.json` またはグローバル設定フォルダに配置します。
+グローバル設定は `~/.gemini/config/mcp_config.json`、ワークスペース単位の設定はプロジェクト直下の `.agents/mcp_config.json` です（公式ドキュメントの記載。バージョンによっては `~/.gemini/antigravity/mcp_config.json` の場合もあります）。
+
+実際に読み込まれているファイルは、エージェントパネルの「…」メニュー → MCP Servers → Manage MCP Servers → View raw config で確認できます。
 
 ### 設定例（GitHub連携とSQLiteサーバー）
 
@@ -109,10 +111,14 @@ Geminiエコシステム（Antigravity IDEやGemini CLI）でも同様のMCP構�
 | サーバー名 | コマンド（npx / uvx） | できること |
 | :--- | :--- | :--- |
 | Filesystem | `@modelcontextprotocol/server-filesystem` | 指定ディレクトリのファイル一覧表示、読み込み、編集 |
-| GitHub | `@modelcontextprotocol/server-github` | リポジトリ検索、Issue作成、PR一覧の取得 |
+| GitHub（※保守終了） | `@modelcontextprotocol/server-github` | リポジトリ検索、Issue作成、PR一覧の取得 |
 | Fetch | `mcp-server-fetch` | URLのWebページを取得してMarkdownに変換 |
 | Memory | `@modelcontextprotocol/server-memory` | 会話をまたいだ知識グラフ・記憶の永続化 |
-| PostgreSQL | `@modelcontextprotocol/server-postgres` | DBスキーマの取得とSQLクエリの直接実行 |
+| PostgreSQL（※保守終了） | `@modelcontextprotocol/server-postgres` | DBスキーマの取得とSQLクエリの直接実行 |
+
+:::caution[保守終了のサーバーに注意]
+GitHub・PostgreSQL・SQLite（本記事の設定例に登場する `mcp-server-sqlite` を含む）の参考実装サーバーはアーカイブ済みで、機能追加やセキュリティ修正は行われていません。利用する場合は自己責任となるため、提供元が公開している最新のサーバーや MCP Registry を確認してください。
+:::
 
 ## 6. 実機での使い方・動作確認の流れ
 
