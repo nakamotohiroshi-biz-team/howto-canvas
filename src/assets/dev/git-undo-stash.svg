@@ -46,7 +46,7 @@
     <text x="18" y="140" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">別件終了後、預けた変更を取り出して作業再開！</text>
   </g>
 
-  <!-- Card 2: git commit --amend -->
+  <!-- Card 2: git commit amend -->
   <g transform="translate(390, 65)" filter="url(#shadowUndo)">
     <rect width="335" height="165" rx="12" fill="#1b202c" stroke="#06b6d4" stroke-width="1.5"/>
     <rect width="335" height="34" rx="12" fill="url(#amendGradU)"/>
