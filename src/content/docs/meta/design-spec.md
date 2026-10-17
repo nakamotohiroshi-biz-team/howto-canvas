@@ -121,6 +121,8 @@ mindmap
       スキル Tool Use 設定
       文字起こし議事録整形
       プロの裏技・Artifacts
+      Claude Code 備忘録
+      プロンプトひな形集
     2. Gemini
       最新裏技・Deep Research
       プロの裏技・動画解析
@@ -139,6 +141,10 @@ mindmap
       ブランチ戦略 GitHub Flow
       Issues & Projects タスク管理
       PR作成術＆レビュー作法
+      GitHub CLI 備忘録
+      GitHub Pages 公開・確認手順
+      .gitignore と機密情報
+      複数アカウント使い分け
     6. サイト管理
       取扱説明書
       サイト設計書
