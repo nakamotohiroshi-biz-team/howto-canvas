@@ -17,7 +17,7 @@
   <!-- Central Canvas Board Graphic -->
   <g filter="url(#heroShadow)">
     <!-- Main Slate -->
-    <rect x="60" y="60" width="480" height="360" rx="20" fill="url(#boxGrad1)" stroke="url(#glowGrad)" stroke-width="2.5"/>
+    <rect x="60" y="60" width="480" height="380" rx="20" fill="url(#boxGrad1)" stroke="url(#glowGrad)" stroke-width="2.5"/>
     
     <!-- Top Bar -->
     <rect x="60" y="60" width="480" height="45" rx="20" fill="#1e293b"/>
@@ -26,29 +26,32 @@
     <circle cx="135" cy="82" r="6" fill="#10b981"/>
     <text x="300" y="88" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="13" font-weight="bold">HowTo Canvas Knowledge Hub</text>
 
-    <!-- Mini Cards Grid on Canvas -->
-    <!-- Card 1: AI -->
-    <rect x="90" y="130" width="195" height="110" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5"/>
-    <circle cx="120" cy="160" r="14" fill="#6366f1"/>
-    <text x="120" y="165" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14">🤖</text>
-    <text x="145" y="165" fill="#e0e7ff" font-family="sans-serif" font-size="13" font-weight="bold">AI ツール</text>
-    <text x="105" y="195" fill="#a5b4fc" font-family="sans-serif" font-size="11">Claude / Gemini / MCP</text>
-    <text x="105" y="215" fill="#6366f1" font-family="sans-serif" font-size="10">自律エージェント設定手順</text>
+    <!-- Mini Cards Grid on Canvas (2-Column Focus) -->
+    <!-- Card 1: AI Tools -->
+    <rect x="90" y="130" width="195" height="230" rx="14" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="187" cy="175" r="24" fill="#4338ca"/>
+    <text x="187" y="182" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="20">🤖</text>
+    <text x="187" y="225" text-anchor="middle" fill="#e0e7ff" font-family="sans-serif" font-size="16" font-weight="bold">AI ツールの使い方</text>
+    
+    <text x="110" y="260" fill="#a5b4fc" font-family="sans-serif" font-size="12">・Gemini &amp; Claude 活用法</text>
+    <text x="110" y="285" fill="#a5b4fc" font-family="sans-serif" font-size="12">・MCP サーバー接続手順</text>
+    <text x="110" y="310" fill="#a5b4fc" font-family="sans-serif" font-size="12">・NotebookLM 裏技テクニック</text>
+    <text x="110" y="335" fill="#a5b4fc" font-family="sans-serif" font-size="12">・自律型 Claude Code ガイド</text>
 
-    <!-- Card 2: Dev -->
-    <rect x="315" y="130" width="195" height="110" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
-    <circle cx="345" cy="160" r="14" fill="#10b981"/>
-    <text x="345" y="165" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14">⚡</text>
-    <text x="370" y="165" fill="#d1fae5" font-family="sans-serif" font-size="13" font-weight="bold">開発・コード</text>
-    <text x="330" y="195" fill="#6ee7b7" font-family="sans-serif" font-size="11">Git / GitHub / チーム開発</text>
-    <text x="330" y="215" fill="#059669" font-family="sans-serif" font-size="10">コマンド体系チートシート</text>
+    <!-- Card 2: Dev & Engineering -->
+    <rect x="315" y="130" width="195" height="230" rx="14" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <circle cx="412" cy="175" r="24" fill="#047857"/>
+    <text x="412" y="182" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="20">⚡</text>
+    <text x="412" y="225" text-anchor="middle" fill="#d1fae5" font-family="sans-serif" font-size="16" font-weight="bold">開発・コード</text>
+    
+    <text x="335" y="260" fill="#6ee7b7" font-family="sans-serif" font-size="12">・Git 基本データフロー</text>
+    <text x="335" y="285" fill="#6ee7b7" font-family="sans-serif" font-size="12">・GitHub チーム開発 PR運用</text>
+    <text x="335" y="310" fill="#6ee7b7" font-family="sans-serif" font-size="12">・日常コマンドチートシート</text>
+    <text x="335" y="335" fill="#6ee7b7" font-family="sans-serif" font-size="12">・ブランチ保護と安全なマージ</text>
 
-    <!-- Card 3: Appliances -->
-    <rect x="90" y="260" width="420" height="120" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="1.5"/>
-    <circle cx="125" cy="295" r="16" fill="#f59e0b"/>
-    <text x="125" y="301" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="16">🍳</text>
-    <text x="155" y="301" fill="#fef3c7" font-family="sans-serif" font-size="14" font-weight="bold">家電・実機のお手入れ</text>
-    <text x="155" y="325" fill="#fde68a" font-family="sans-serif" font-size="12">電子レンジ・エアコン等の清掃＆メンテナンス手順</text>
-    <text x="155" y="348" fill="#d97706" font-family="sans-serif" font-size="11">スチーム軟化・安全チェックリスト付き</text>
+    <!-- Bottom Footer Tagline on Board -->
+    <text x="300" y="405" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="12">
+      AIと開発ツールの実践ナレッジを直感的な図解で整理
+    </text>
   </g>
 </svg>

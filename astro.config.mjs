@@ -26,10 +26,6 @@ export default defineConfig({
           label: '開発・エンジニアリング',
           items: [{ autogenerate: { directory: 'dev' } }],
         },
-        {
-          label: '家電・実機の使い方',
-          items: [{ autogenerate: { directory: 'appliances' } }],
-        },
       ],
       social: [
         {

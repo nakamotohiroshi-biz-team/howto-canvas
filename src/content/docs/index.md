@@ -12,8 +12,8 @@ hero:
       link: /howto-canvas/ai/claude/skills/
       icon: right-arrow
       variant: primary
-    - text: 家電のお手入れを見る
-      link: /howto-canvas/appliances/microwave/cleaning/
+    - text: 開発ガイドを見る
+      link: /howto-canvas/dev/git/basic-flow/
       icon: external
 ---
 
@@ -23,12 +23,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
   <Card icon="laptop" title="AI ツールの使い方">
-    ClaudeやGeminiのプロンプト、独自スキル、外部API連携などの実践手順。
+    ClaudeやGeminiのプロンプト、独自スキル、MCP連携、裏技などの実践手順。
   </Card>
   <Card icon="setting" title="開発・エンジニアリング">
-    Git運用、Docker構成、各種開発ツールのセットアップ手順。
-  </Card>
-  <Card icon="information" title="家電・実機の使い方">
-    電子レンジ、エアコン、スマート家電などの基本操作とメンテナンス。
+    Git運用、GitHubチーム開発、コマンドチートシートなどのセットアップ手順。
   </Card>
 </CardGrid>
