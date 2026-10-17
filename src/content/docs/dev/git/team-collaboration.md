@@ -48,7 +48,9 @@ git pull origin main
 ブランチ名には「作業内容」がひと目でわかる名前を付けます。
 
 ```bash
-# feature/ヘッダー修正 というブランチを作成して切り替え
+# feature/ヘッダー修正 というブランチを作成して切り替え（推奨）
+git switch -c feature/header-design
+# または従来の書き方
 git checkout -b feature/header-design
 ```
 
@@ -61,7 +63,7 @@ git commit -m "feat: ヘッダーのロゴとナビゲーションを追加"
 ```
 
 ### ステップ4: GitHubに自分のブランチをプッシュする
-自分のブランチだけをGitHubに送信します。mainブランチには影響を与えません。
+自分のブランチだけをGitHubに送信します。mainブランチには一切影響を与えません。
 
 ```bash
 git push -u origin feature/header-design
@@ -72,22 +74,24 @@ git push -u origin feature/header-design
 2. 画面上部に表示される「Compare & pull request」ボタンをクリックします。
 3. タイトルと変更内容（何を変更したか、動作確認方法）を記入して「Create pull request」を押します。
 
+より相手に伝わるPRの書き方は [伝わるプルリクエスト（PR）作成術とコードレビュー作法](/howto-canvas/dev/github/pull-request-review/) で詳しく解説しています。
+
 ### ステップ6: レビューを受けてマージする
 - 仲間にPRを見てもらい、コメントや修正依頼があれば対応します。
-- 問題がなければ「Merge pull request」ボタンを押してmainブランチへ合流させます。
+- 問題がなければ「Merge pull request（Squash and merge 推奨）」を押してmainブランチへ合流させます。
 
 ## 4. よくある初心者の疑問とトラブル対処法
 
 ### Q1. コンフリクト（競合）が起きたときは？
 同じファイルの同じ行を自分と仲間が同時に編集した場合に発生します。
-エディタ（VS Codeなど）上に両方の変更箇所が表示されるので、仲間と相談してどちらを残すか選択し、再度コミットしてプッシュします。
+詳しい解消ステップは [Git コンフリクト（競合）の予防と解決マスターガイド](/howto-canvas/dev/git/conflict-resolution/) をご覧ください。
 
 ### Q2. 間違えてmainブランチで作業してしまったら？
-まだコミットしていなければ、そのまま新しいブランチを作成すれば作業内容を引き継げます。
+まだコミットしていなければ、変更内容を保持したまま新しい作業ブランチを作成すれば安全に移行できます。
 
 ```bash
-# 作業内容を保持したまま新規ブランチへ移動
-git checkout -b feature/my-work
+# 作業内容をそのまま新ブランチへ移動
+git switch -c feature/my-work
 ```
 
 ## 5. チーム開発チェックリスト
