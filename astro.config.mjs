@@ -19,24 +19,29 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Claude 活用ガイド',
+          label: 'Claude',
           items: [{ autogenerate: { directory: 'ai/claude' } }],
         },
         {
-          label: 'Gemini 活用ガイド',
+          label: 'Gemini',
           items: [{ autogenerate: { directory: 'ai/gemini' } }],
         },
         {
-          label: 'NotebookLM 活用ガイド',
-          items: [{ autogenerate: { directory: 'ai/notebooklm' } }],
-        },
-        {
-          label: 'MCP（Model Context Protocol）',
-          items: [{ autogenerate: { directory: 'ai/mcp' } }],
-        },
-        {
-          label: 'モデル間連携・スキル共有',
-          items: [{ slug: 'ai/gemini-claude-sharing' }],
+          label: '共通',
+          items: [
+            {
+              label: 'スキル共有・コピー方法',
+              slug: 'ai/gemini-claude-sharing',
+            },
+            {
+              label: 'MCP（共通ツール規格）',
+              items: [{ autogenerate: { directory: 'ai/mcp' } }],
+            },
+            {
+              label: 'NotebookLM（音声・資料解析）',
+              items: [{ autogenerate: { directory: 'ai/notebooklm' } }],
+            },
+          ],
         },
       ],
       social: [

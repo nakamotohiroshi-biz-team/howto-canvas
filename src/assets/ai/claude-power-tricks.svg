@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#ea580c" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title & Subtitle -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Claude 最新・便利な使い方＆裏技大全</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">Claude Code、Artifacts、Projects、推論ブースト「Think harder」の実践テクニック</text>
+
+  <!-- 3 Top Cards -->
+  <!-- Card 1: Claude Code -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="100" width="225" height="145" rx="12" fill="url(#cardGrad1)" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="40" y="100" width="225" height="34" rx="12" fill="url(#headerGrad)"/>
+    <text x="152" y="123" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">1. Claude Code 自律化</text>
+    
+    <text x="55" y="160" fill="#f97316" font-family="sans-serif" font-size="12" font-weight="bold">・Plan Mode 計画立案</text>
+    <text x="55" y="180" fill="#94a3b8" font-family="sans-serif" font-size="11">実行前に綿密なステップ設計</text>
+    <text x="55" y="205" fill="#f97316" font-family="sans-serif" font-size="12" font-weight="bold">・ESC割り込みで制御</text>
+    <text x="55" y="225" fill="#94a3b8" font-family="sans-serif" font-size="11">迷走時に即座に軌道修正</text>
+  </g>
+
+  <!-- Card 2: Artifacts & UI -->
+  <g filter="url(#shadow)">
+    <rect x="285" y="100" width="225" height="145" rx="12" fill="url(#cardGrad1)" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="285" y="100" width="225" height="34" rx="12" fill="#2563eb"/>
+    <text x="397" y="123" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">2. Artifacts 部分推敲</text>
+    
+    <text x="300" y="160" fill="#60a5fa" font-family="sans-serif" font-size="12" font-weight="bold">・React / HTML 即時表示</text>
+    <text x="300" y="180" fill="#94a3b8" font-family="sans-serif" font-size="11">右枠で動作確認しながら開発</text>
+    <text x="300" y="205" fill="#60a5fa" font-family="sans-serif" font-size="12" font-weight="bold">・ピンポイント差分編集</text>
+    <text x="300" y="225" fill="#94a3b8" font-family="sans-serif" font-size="11">全文書き直しのイライラ解消</text>
+  </g>
+
+  <!-- Card 3: Projects 固定文脈 -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="100" width="230" height="145" rx="12" fill="url(#cardGrad1)" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="530" y="100" width="230" height="34" rx="12" fill="#059669"/>
+    <text x="645" y="123" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">3. Projects 文脈固定</text>
+    
+    <text x="545" y="160" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">・専用の「部屋」を作成</text>
+    <text x="545" y="180" fill="#94a3b8" font-family="sans-serif" font-size="11">自社ルール・資料を事前配置</text>
+    <text x="545" y="205" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">・プロンプト再入力不要</text>
+    <text x="545" y="225" fill="#94a3b8" font-family="sans-serif" font-size="11">毎回前提を話さず即本題へ</text>
+  </g>
+
+  <!-- 3 Bottom Cards -->
+  <!-- Card 4: Claude Skills -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="260" width="225" height="135" rx="12" fill="url(#cardGrad1)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect x="40" y="260" width="225" height="30" rx="12" fill="#7c3aed"/>
+    <text x="152" y="281" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">4. Claude Skills 書類処理</text>
+    <text x="55" y="315" fill="#c084fc" font-family="sans-serif" font-size="11" font-weight="bold">・Office文書の直接編集</text>
+    <text x="55" y="335" fill="#94a3b8" font-family="sans-serif" font-size="10">Word/Excel/PowerPoint対応</text>
+    <text x="55" y="355" fill="#c084fc" font-family="sans-serif" font-size="11" font-weight="bold">・レイアウト・数式を保持</text>
+    <text x="55" y="375" fill="#94a3b8" font-family="sans-serif" font-size="10">崩さずプロ品質で更新</text>
+  </g>
+
+  <!-- Card 5: 超長文クロス分析 -->
+  <g filter="url(#shadow)">
+    <rect x="285" y="260" width="225" height="135" rx="12" fill="url(#cardGrad1)" stroke="#06b6d4" stroke-width="1.5"/>
+    <rect x="285" y="260" width="225" height="30" rx="12" fill="#0891b2"/>
+    <text x="397" y="281" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">5. 書籍数冊分のクロス分析</text>
+    <text x="300" y="315" fill="#22d3ee" font-family="sans-serif" font-size="11" font-weight="bold">・分厚いPDFマニュアル丸ごと</text>
+    <text x="300" y="335" fill="#94a3b8" font-family="sans-serif" font-size="10">競合調査資料を一度に読込</text>
+    <text x="300" y="355" fill="#22d3ee" font-family="sans-serif" font-size="11" font-weight="bold">・ページ数付きピンポイント抽出</text>
+    <text x="300" y="375" fill="#94a3b8" font-family="sans-serif" font-size="10">「差別化要因を3つ挙げて」</text>
+  </g>
+
+  <!-- Card 6: 推論ブースト -->
+  <g filter="url(#shadow)">
+    <rect x="530" y="260" width="230" height="135" rx="12" fill="url(#cardGrad1)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="530" y="260" width="230" height="30" rx="12" fill="#d97706"/>
+    <text x="645" y="281" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">6. 「Think harder」呪文</text>
+    <text x="545" y="315" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="bold">・推論の深さを極大化</text>
+    <text x="545" y="335" fill="#94a3b8" font-family="sans-serif" font-size="10">複雑な数学・法務・設計時に指示</text>
+    <text x="545" y="355" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="bold">・トーン＆マナーの強制指定</text>
+    <text x="545" y="375" fill="#94a3b8" font-family="sans-serif" font-size="10">後からの修正工数をゼロに</text>
+  </g>
+</svg>

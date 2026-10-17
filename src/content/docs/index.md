@@ -19,19 +19,16 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## AIツール別ガイド
+## カテゴリ別ナレッジ
 
 <CardGrid stagger>
-  <Card icon="laptop" title="Claude 活用ガイド">
-    自律型エージェント「Claude Code」、独自スキル定義、Artifactsでのアプリ開発、生文字起こしからの高品質議事録整形。
+  <Card icon="laptop" title="Claude">
+    最新の裏技大全、自律型エージェント「Claude Code」、独自スキル定義、Artifactsでのアプリ開発、生文字起こしからの高品質議事録整形。
   </Card>
-  <Card icon="star" title="Google Gemini 活用ガイド">
-    200万トークンの長大動画・音声解析、Google Workspace（Drive/Gmail）直接連携、Canvasによる部分推敲。
+  <Card icon="star" title="Gemini">
+    最新の裏技大全、自律型リサーチ「Deep Research」、Canvasによる部分推敲、カスタムGem作成、スプレッドシート=AI()関数、200万トークン動画解析。
   </Card>
-  <Card icon="document" title="NotebookLM 活用ガイド">
-    音声録音からの自動文字起こし＆議事録・報告書作成、ハルシネーションゼロのソース限定回答、ポッドキャスト化。
-  </Card>
-  <Card icon="puzzle" title="MCP（Model Context Protocol）">
-    AIと外部ツール・DB・APIをつなぐオープン標準規格。Claude DesktopやGemini環境での初期設定とサーバー導入。
+  <Card icon="puzzle" title="共通（連携・MCP・ツール）">
+    GeminiとClaudeでスキルを共有・コピーする手順、オープン規格「MCP」完全ガイド、NotebookLMによる音声文字起こし・資料解析。
   </Card>
 </CardGrid>
