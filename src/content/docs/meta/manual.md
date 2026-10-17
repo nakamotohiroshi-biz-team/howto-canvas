@@ -54,8 +54,8 @@ flowchart TD
     B --> C[3. 専用図解SVGの作成・配置]
     C --> D[4. frontmatterと本文の記述]
     D --> E[5. ローカル動作確認 npm run dev]
-    E --> F[6. Gitコミット & プッシュ]
-    F --> G[7. GitHub Pagesへ自動公開]
+    E --> F[6. ブランチでコミット & PR作成]
+    F --> G[7. mainへマージ → 自動公開]
 ```
 
 ### 2-1. ファイルの作成場所と命名規則
@@ -129,10 +129,13 @@ npm run dev
 ```
 ブラウザで `http://localhost:4321/howto-canvas/` を開き、新しく追加した記事や目次が正しく表示されているかチェックします。
 
-### ステップ2: 変更のコミット
-Gitで変更を記録します。
+### ステップ2: 作業ブランチでコミット
+mainには直接コミットせず、作業用ブランチを作ってから変更を記録します。
 
 ```bash
+# 作業用ブランチを作成して切り替え
+git switch -c feature/<作業内容>
+
 # 全変更をステージング
 git add -A
 
@@ -140,13 +143,14 @@ git add -A
 git commit -m "feat: 〇〇の使い方ガイドと専用図解を追加"
 ```
 
-### ステップ3: GitHubへプッシュ
-リモートリポジトリへ送信します。
+### ステップ3: プッシュしてプルリクエストを作成
+作業ブランチをGitHubへ送信し、プルリクエスト（PR）を作成します。
 
 ```bash
-git push origin main
+git push -u origin feature/<作業内容>
 ```
-プッシュが完了すると、GitHub Actionsが自動的に起動し、最新の静的ページがビルドされてGitHub Pagesへ自動デプロイされます。
+
+GitHub上でPRを作成し、内容を確認してmainへマージします。マージが完了するとGitHub Actionsが自動的に起動し、最新の静的ページがビルドされてGitHub Pagesへ自動デプロイされます。
 
 ---
 

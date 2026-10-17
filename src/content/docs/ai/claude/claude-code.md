@@ -33,8 +33,8 @@ graph TD
 ## 3. インストールと初期設定
 
 ### 前提条件
-- Node.js 18以上がインストールされていること
-- Anthropic Consoleのアカウント（APIキー）があること
+- Claudeのサブスクリプション（Pro / Max / Team / Enterprise）、またはAnthropic Consoleのアカウント（API利用）があること
+- npmでインストールする場合は Node.js 18以上がインストールされていること（専用インストーラを使う場合は不要）
 
 ### インストール手順
 
@@ -44,6 +44,8 @@ graph TD
 # グローバルインストール
 npm install -g @anthropic-ai/claude-code
 ```
+
+Node.js を使わない専用インストーラも用意されています。最新のインストール手順は[公式ドキュメント](https://code.claude.com/docs/en/getting-started/installation)を確認してください。
 
 ### 初回起動と認証
 
