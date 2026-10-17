@@ -1,7 +1,68 @@
+/* 目に優しいカラーパレット設定（ペーパー／スレート調のソフトなコントラスト） */
+
+/* ライトモード：刺激の強い真っ白を避け、温かみのあるペーパーアイボリーと落ち着いたチャコール */
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+  --sl-color-black: #f7f6f2; /* メイン背景（温かみのあるオフホワイト・ペーパー調） */
+  --sl-color-bg: #f7f6f2;
+  --sl-color-bg-nav: #eeebe3; /* ナビバー背景（ソフトウォームグレー） */
+  --sl-color-bg-sidebar: #f0ede6; /* サイドバー背景 */
+  --sl-color-bg-inline-code: #e5e2da;
+  
+  --sl-color-gray-7: #eeebe3;
+  --sl-color-gray-6: #e4e0d6;
+  --sl-color-gray-5: #cac5b8;
+  --sl-color-gray-4: #8c887e;
+  --sl-color-gray-3: #5c5850;
+  --sl-color-gray-2: #383632; /* 本文・サブテキスト（落ち着いたダークチャコール） */
+  --sl-color-gray-1: #242220; /* 見出し */
+  --sl-color-white: #1e1d1a; /* 最も強い文字色（真っ黒ではなくソフトな黒） */
+  
+  --sl-color-text: #2f2d2a;
+  --sl-color-hairline: #dedad0;
+  --sl-color-hairline-light: #e8e4db;
+  --sl-color-hairline-shade: #d4cfc4;
+
+  /* アクセントカラー：目に優しいスレートインディゴ */
+  --sl-color-accent-low: #e2ebf4;
+  --sl-color-accent: #2e6297;
+  --sl-color-accent-high: #1c3e61;
+  --sl-color-text-accent: #265584;
+}
+
+/* ダークモード：真っ黒を避け、疲労を軽減する深いスレートチャコールと柔らかなライトグレー */
+:root[data-theme='dark'],
+[data-theme='dark'] ::backdrop {
+  --sl-color-black: #16181d; /* メイン背景（目に優しいダークスレート） */
+  --sl-color-bg: #16181d;
+  --sl-color-bg-nav: #1c2026; /* ナビバー背景 */
+  --sl-color-bg-sidebar: #191c22; /* サイドバー背景 */
+  --sl-color-bg-inline-code: #252a33;
+
+  --sl-color-gray-6: #232832;
+  --sl-color-gray-5: #323846;
+  --sl-color-gray-4: #606878;
+  --sl-color-gray-3: #8e97a8;
+  --sl-color-gray-2: #c4ccd8; /* 本文テキスト（眩しくないソフトグレー） */
+  --sl-color-gray-1: #e2e7ef; /* 見出し */
+  --sl-color-white: #edf1f7; /* 強調テキスト */
+
+  --sl-color-text: #c8d0dc;
+  --sl-color-hairline: #2a303c;
+  --sl-color-hairline-light: #343c4a;
+  --sl-color-hairline-shade: #121418;
+
+  /* アクセントカラー：落ち着いたセルリアンブルー */
+  --sl-color-accent-low: #192a3e;
+  --sl-color-accent: #5294e2;
+  --sl-color-accent-high: #8bbcf7;
+  --sl-color-text-accent: #72abf0;
+}
+
 /* 画像の角丸と影、中央揃え */
 .sl-markdown-content img {
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
   margin: 1.5rem auto;
   display: block;
 }
@@ -10,7 +71,48 @@
 .mermaid {
   background: var(--sl-color-gray-6);
   padding: 1.25rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 1.5rem 0;
   text-align: center;
+}
+
+/* トップページのクイックナビゲーション用ボタンスタイル */
+.quick-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.quick-nav-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--sl-color-bg-nav);
+  border: 1px solid var(--sl-color-hairline);
+  transition: all 0.2s ease-in-out;
+}
+
+.quick-nav-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.quick-nav-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sl-color-white);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-nav-desc {
+  font-size: 0.85rem;
+  color: var(--sl-color-gray-3);
+  line-height: 1.5;
 }
