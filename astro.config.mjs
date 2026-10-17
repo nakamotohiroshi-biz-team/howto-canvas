@@ -56,6 +56,10 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: '取扱説明書・サイト設計書',
+          items: [{ autogenerate: { directory: 'meta' } }],
+        },
       ],
       social: [
         {

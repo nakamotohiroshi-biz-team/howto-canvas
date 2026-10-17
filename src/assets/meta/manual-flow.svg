@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16181f"/>
+      <stop offset="100%" stop-color="#1f2430"/>
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="writeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="deployGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="420" rx="16" fill="url(#bgGradM)"/>
+
+  <!-- Title -->
+  <text x="380" y="38" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="bold">HowTo Canvas 取扱説明書：閲覧・執筆・公開の全体サイクル</text>
+
+  <!-- 3 Phases Grid -->
+
+  <!-- Phase 1: 閲覧者向けマニュアル -->
+  <g transform="translate(35, 65)">
+    <rect width="215" height="325" rx="12" fill="#202432" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="215" height="34" rx="12" fill="url(#userGrad)"/>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">1. サイトの活用・閲覧方法</text>
+
+    <text x="15" y="60" fill="#93c5fd" font-family="sans-serif" font-size="11" font-weight="bold">【3大ナビゲーション機能】</text>
+
+    <text x="15" y="85" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">① 左サイドバーメニュー</text>
+    <text x="15" y="103" fill="#cbd5e1" font-family="sans-serif" font-size="10">Claude / Gemini / Notebook /</text>
+    <text x="15" y="118" fill="#cbd5e1" font-family="sans-serif" font-size="10">Gitの階層順に記事を探す</text>
+
+    <text x="15" y="143" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">② キーワード検索（Ctrl+K）</text>
+    <text x="15" y="161" fill="#cbd5e1" font-family="sans-serif" font-size="10">右上の検索バーから日本語で</text>
+    <text x="15" y="176" fill="#cbd5e1" font-family="sans-serif" font-size="10">記事本文・見出しを全文検索</text>
+
+    <text x="15" y="201" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">③ 目に優しいテーマ切替</text>
+    <text x="15" y="219" fill="#cbd5e1" font-family="sans-serif" font-size="10">右上の太陽/月アイコンで</text>
+    <text x="15" y="234" fill="#cbd5e1" font-family="sans-serif" font-size="10">ライト/ダークを瞬時切替</text>
+
+    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
+    <text x="107" y="280" text-anchor="middle" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="bold">右側の目次（TOC）</text>
+    <text x="107" y="298" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="9">長い記事もピンポイント移動可能</text>
+  </g>
+
+  <!-- Phase 2: 記事の執筆ルール -->
+  <g transform="translate(272, 65)">
+    <rect width="215" height="325" rx="12" fill="#202432" stroke="#34d399" stroke-width="1.5"/>
+    <rect width="215" height="34" rx="12" fill="url(#writeGrad)"/>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">2. 記事の作成・執筆ルール</text>
+
+    <text x="15" y="60" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="bold">【標準フォーマット】</text>
+
+    <text x="15" y="85" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">① Markdownファイルの配置</text>
+    <text x="15" y="103" fill="#cbd5e1" font-family="monospace" font-size="9">src/content/docs/カテゴリ/</text>
+    <text x="15" y="118" fill="#cbd5e1" font-family="sans-serif" font-size="10">階層に slug.md を新規作成</text>
+
+    <text x="15" y="143" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">② frontmatterの設定</text>
+    <text x="15" y="161" fill="#cbd5e1" font-family="sans-serif" font-size="10">title, description, order</text>
+    <text x="15" y="176" fill="#cbd5e1" font-family="sans-serif" font-size="10">を指定して並び順を制御</text>
+
+    <text x="15" y="201" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">③ SVG図解 &amp; Mermaid図</text>
+    <text x="15" y="219" fill="#cbd5e1" font-family="sans-serif" font-size="10">src/assets/ に専用SVGを作成</text>
+    <text x="15" y="234" fill="#cbd5e1" font-family="sans-serif" font-size="10">初心者向けに図解を必ず添付</text>
+
+    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
+    <text x="107" y="280" text-anchor="middle" fill="#34d399" font-family="sans-serif" font-size="10" font-weight="bold">メニュー自動反映</text>
+    <text x="107" y="298" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="9">autogenerate で即座にサイドバーへ</text>
+  </g>
+
+  <!-- Phase 3: 公開・Git運用フロー -->
+  <g transform="translate(510, 65)">
+    <rect width="215" height="325" rx="12" fill="#202432" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect width="215" height="34" rx="12" fill="url(#deployGrad)"/>
+    <text x="107" y="22" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="12" font-weight="bold">3. コミット・公開フロー</text>
+
+    <text x="15" y="60" fill="#c4b5fd" font-family="sans-serif" font-size="11" font-weight="bold">【本番反映の3ステップ】</text>
+
+    <text x="15" y="85" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">① ローカル動作確認</text>
+    <text x="15" y="103" fill="#cbd5e1" font-family="monospace" font-size="10">npm run dev</text>
+    <text x="15" y="118" fill="#cbd5e1" font-family="sans-serif" font-size="10">ブラウザでレイアウト崩れ確認</text>
+
+    <text x="15" y="143" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">② Gitコミット</text>
+    <text x="15" y="161" fill="#cbd5e1" font-family="monospace" font-size="10">git add -A</text>
+    <text x="15" y="176" fill="#cbd5e1" font-family="monospace" font-size="10">git commit -m "feat: ..."</text>
+
+    <text x="15" y="201" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="bold">③ GitHubへプッシュ</text>
+    <text x="15" y="219" fill="#cbd5e1" font-family="monospace" font-size="10">git push origin main</text>
+    <text x="15" y="234" fill="#cbd5e1" font-family="sans-serif" font-size="10">自動ビルド＆デプロイ開始</text>
+
+    <rect x="15" y="260" width="185" height="50" rx="8" fill="#0f172a"/>
+    <text x="107" y="280" text-anchor="middle" fill="#a78bfa" font-family="sans-serif" font-size="10" font-weight="bold">認証固定済み</text>
+    <text x="107" y="298" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="9">アカウント選択なしで即プッシュ！</text>
+  </g>
+</svg>
