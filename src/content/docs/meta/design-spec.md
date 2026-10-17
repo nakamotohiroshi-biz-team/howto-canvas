@@ -96,6 +96,7 @@ howto-canvas/
 │   │       │   └── mcp/        # MCP共通ツール規格
 │   │       ├── dev/            # 開発・Git・GitHub関連記事
 │   │       │   ├── git/        # Gitバージョン管理
+│   │       │   ├── network/    # ネットワークコマンド
 │   │       │   └── github/     # GitHub＆チーム開発
 │   │       ├── meta/           # 取扱説明書・設計書
 │   │       └── index.mdx       # トップページ
@@ -141,6 +142,7 @@ mindmap
       ブランチ戦略 GitHub Flow
       Issues & Projects タスク管理
       PR作成術＆レビュー作法
+      Windowsネットワークコマンド一覧
       GitHub CLI 備忘録
       GitHub Pages 公開・確認手順
       .gitignore と機密情報
