@@ -3,7 +3,7 @@ title: HowTo Canvas ｜ AI＆開発実践ナレッジ
 description: Claude、Gemini、Gemini Notebook（NotebookLM）、開発・Gitの実践活用ナレッジベース
 ---
 
-import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 最先端AIモデルと開発ツールの実践活用法を、直感的な図解とステップで整理したナレッジベースです。
 左側のサイドバーメニュー、または下記のカテゴリカードから各ガイドへ直接アクセスできます。
@@ -29,7 +29,7 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
     </div>
   </a>
 
-  <a href="/howto-canvas/ai/notebooklm/voice-minutes/" class="quick-nav-card">
+  <a href="/howto-canvas/ai/notebooklm/audio-transcription/" class="quick-nav-card">
     <div class="quick-nav-title">
       <span>🟩</span> 3. Gemini Notebook
     </div>
@@ -55,36 +55,35 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 <CardGrid stagger>
   <Card icon="laptop" title="1. Claude 活用ガイド">
     Claudeの強みである長文理解、コード生成、アーキテクチャ設計を最大化するナレッジ。
-    - [裏技・便利テクニック大全](/howto-canvas/ai/claude/tips-and-tricks/)
-    - [自律型AIエージェント Claude Code ガイド](/howto-canvas/ai/claude/claude-code-guide/)
-    - [Claude 独自スキル（カスタム指示）定義](/howto-canvas/ai/claude/custom-skills/)
-    - [音声文字起こしからの高品質議事録整形](/howto-canvas/ai/claude/transcript-cleanup/)
+    - [最新・便利な使い方＆裏技大全](/howto-canvas/ai/claude/tips-and-tricks/)
+    - [自律型AIエージェント Claude Code 入門](/howto-canvas/ai/claude/claude-code/)
+    - [初心者向け Claude スキル（Tool Use）設定手順](/howto-canvas/ai/claude/skills/)
+    - [音声文字起こしからの高品質議事録・報告書整形](/howto-canvas/ai/claude/meeting-minutes/)
+    - [プロの裏技・活用テクニック集（Artifacts・XMLタグ）](/howto-canvas/ai/claude/pro-tips/)
   </Card>
 
   <Card icon="star" title="2. Gemini 活用ガイド">
     Googleエコシステム連携、マルチモーダル、超長文処理を駆使した実践ノウハウ。
-    - [裏技・便利テクニック大全](/howto-canvas/ai/gemini/tips-and-tricks/)
-    - [自律型リサーチ Deep Research 活用法](/howto-canvas/ai/gemini/deep-research/)
-    - [Canvas作業スペースでのリアルタイム共同推敲](/howto-canvas/ai/gemini/canvas-mode/)
-    - [専用AIアシスタント Gems（カスタムGem）作成](/howto-canvas/ai/gemini/custom-gems/)
-    - [Googleスプレッドシートでの=AI()関数自動化](/howto-canvas/ai/gemini/sheets-ai/)
+    - [最新・便利な使い方＆裏技大全（Deep Research・Canvas・Gem）](/howto-canvas/ai/gemini/tips-and-tricks/)
+    - [プロの裏技集（200万トークン動画解析・Workspace連携・二重チェック）](/howto-canvas/ai/gemini/pro-tips/)
   </Card>
 
   <Card icon="document" title="3. Gemini Notebook (NotebookLM)">
     手持ちの資料や録音データだけを正確に参照し、嘘のない回答を導き出す専用ノートブック。
-    - [会議音声からの自動文字起こし＆議事録・報告書作成](/howto-canvas/ai/notebooklm/voice-minutes/)
+    - [音声ファイルから自動文字起こし＆議事録・報告書作成](/howto-canvas/ai/notebooklm/audio-transcription/)
+    - [プロの裏技・実践活用術（音声解説ポッドキャスト・原本引用リンク）](/howto-canvas/ai/notebooklm/pro-tips/)
   </Card>
 
   <Card icon="setting" title="4. 開発・エンジニアリング">
     チーム開発の標準となるGitバージョン管理とGitHub運用の実践プラクティス。
-    - [Git 基本データフロー（4つの領域）](/howto-canvas/dev/git/basic-flow/)
-    - [チーム開発の基本ガイド（ブランチとPR）](/howto-canvas/dev/git/team-collaboration/)
+    - [Git 基本データフロー（カメラで理解する4つの領域）](/howto-canvas/dev/git/basic-flow/)
+    - [初心者向け Git & GitHub チーム開発の基本ガイド](/howto-canvas/dev/git/team-collaboration/)
     - [日常Gitコマンド早見表・チートシート](/howto-canvas/dev/git/commands-list/)
-    - [コンフリクト（競合）の予防と解決マスター](/howto-canvas/dev/git/conflict-resolution/)
-    - [作業取り消し＆一時退避（stash）レスキュー](/howto-canvas/dev/git/undo-and-stash/)
-    - [ブランチ戦略（GitHub Flow）とブランチ保護](/howto-canvas/dev/git/branch-strategies/)
-    - [GitHub Issues & Projects でのタスク管理](/howto-canvas/dev/github/issues-and-projects/)
-    - [伝わるPR作成術とコードレビュー作法](/howto-canvas/dev/github/pull-request-review/)
+    - [コンフリクト（競合）の予防と解決マスターガイド](/howto-canvas/dev/git/conflict-resolution/)
+    - [作業取り消し＆一時退避（stash）レスキューガイド](/howto-canvas/dev/git/undo-and-stash/)
+    - [チーム開発のブランチ戦略（GitHub Flow）とブランチ保護](/howto-canvas/dev/git/branch-strategies/)
+    - [GitHub Issues & Projects を使ったチームタスク管理術](/howto-canvas/dev/github/issues-and-projects/)
+    - [伝わるプルリクエスト（PR）作成術とコードレビュー作法](/howto-canvas/dev/github/pull-request-review/)
   </Card>
 </CardGrid>
 
@@ -98,6 +97,6 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
   <Card icon="puzzle" title="MCP（Model Context Protocol）">
     ClaudeやGeminiに外部ツールやデータベースを接続するオープン規格の基礎知識。
-    - [MCP 概要と始め方](/howto-canvas/ai/mcp/intro/)
+    - [MCP 概要と初期セットアップ完全ガイド](/howto-canvas/ai/mcp/guide/)
   </Card>
 </CardGrid>
