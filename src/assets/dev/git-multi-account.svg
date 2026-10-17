@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGMA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e2238"/>
+    </linearGradient>
+    <linearGradient id="gmaGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="gmaGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="gmaGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="gmaGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadowGMA" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgGMA)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">Git 複数アカウント（仕事・個人）使い分け完全マップ</text>
+
+  <!-- Card 1: 3つの独立設定 -->
+  <g transform="translate(35, 65)" filter="url(#shadowGMA)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#gmaGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 混同しやすい3つの独立領域</text>
+
+    <text x="16" y="62" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">① 認証（ログイン）: GitHubへのプッシュ権限</text>
+    <text x="28" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">→ Git Credential Manager (GCM) で管理</text>
+
+    <text x="16" y="104" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">② コミット名義: 履歴に残る名前とメール</text>
+    <text x="28" y="122" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">→ git config user.name / user.email で管理</text>
+
+    <text x="16" y="146" fill="#fcd34d" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">③ CLI操作: gh コマンドのログイン対象</text>
+  </g>
+
+  <!-- Card 2: 認証の固定設定 -->
+  <g transform="translate(415, 65)" filter="url(#shadowGMA)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#gmaGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. リポジトリごとの認証アカウント固定</text>
+
+    <text x="16" y="60" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">毎回アカウント選択が出るのを防ぐコマンド:</text>
+    <rect x="14" y="70" width="322" height="36" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="22" y="87" fill="#6ee7b7" font-family="Consolas, monospace" font-size="10">git config credential.https://github.com</text>
+    <text x="22" y="100" fill="#6ee7b7" font-family="Consolas, monospace" font-size="10">.username &lt;あなたのアカウント名&gt;</text>
+
+    <text x="16" y="126" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">このリポジトリ限定でGCMの対象ユーザーを固定！</text>
+    <text x="16" y="146" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">仕事用と個人用の誤プッシュを確実に防止</text>
+  </g>
+
+  <!-- Card 3: コミット名義のローカル設定 -->
+  <g transform="translate(35, 250)" filter="url(#shadowGMA)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#gmaGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. コミット名義の個別切り替え</text>
+
+    <text x="16" y="60" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">--global を付けずにリポジトリ直下で実行:</text>
+
+    <rect x="14" y="68" width="322" height="42" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="22" y="85" fill="#fcd34d" font-family="Consolas, monospace" font-size="11">git config user.name "Taro Yamada"</text>
+    <text x="22" y="102" fill="#fcd34d" font-family="Consolas, monospace" font-size="11">git config user.email "work@company.com"</text>
+
+    <text x="16" y="128" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">個人リポジトリには会社アドレスを残さず、</text>
+    <text x="16" y="148" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">会社リポジトリには個人アドレスを入れない鉄則！</text>
+  </g>
+
+  <!-- Card 4: 現在設定の確認診断 -->
+  <g transform="translate(415, 250)" filter="url(#shadowGMA)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#gmaGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. 現在の設定診断・切り替え確認</text>
+
+    <text x="16" y="60" fill="#c4b5fd" font-family="Consolas, monospace" font-size="11" font-weight="bold">git config --list --show-origin</text>
+    <text x="16" y="78" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">どの設定ファイル（local/global）が有効か確認</text>
+
+    <text x="16" y="104" fill="#c4b5fd" font-family="Consolas, monospace" font-size="11" font-weight="bold">gh auth status / gh auth switch</text>
+    <text x="16" y="122" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">GitHub CLI のアクティブなアカウントを切り替え</text>
+
+    <text x="16" y="148" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">コミット前に確認する習慣でトラブルゼロへ</text>
+  </g>
+</svg>

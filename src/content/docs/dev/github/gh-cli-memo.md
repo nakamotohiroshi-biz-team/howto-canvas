@@ -5,6 +5,8 @@ sidebar:
   order: 3
 ---
 
+![GitHub CLI ターミナル直結チートシート](../../../../assets/dev/github-cli-memo.svg)
+
 GitHub CLI（`gh`）を使うと、ブラウザを開かずに、ターミナルからプルリクエスト（PR）の作成やIssueの確認ができます。
 この記事は、初回ログインからPR作成までの流れと、よく使うコマンドの備忘録です。
 

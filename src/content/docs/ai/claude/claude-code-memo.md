@@ -5,6 +5,8 @@ sidebar:
   order: 6
 ---
 
+![Claude Code 設定・権限・実務運用の全体マップ](../../../../assets/ai/claude-code-memo.svg)
+
 [Claude Code 入門](/howto-canvas/ai/claude/claude-code/) の補足として、使い込むうちに必要になる設定や操作を、備忘録としてまとめました。
 
 ## 1. 設定ファイルの置き場所

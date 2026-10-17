@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGHPD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1b2438"/>
+    </linearGradient>
+    <linearGradient id="ghpGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="ghpGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="ghpGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="ghpGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="shadowGHPD" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgGHPD)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">GitHub Pages × Actions 自動公開＆障害診断マップ</text>
+
+  <!-- Card 1: デプロイパイプライン -->
+  <g transform="translate(35, 65)" filter="url(#shadowGHPD)">
+    <rect width="350" height="165" rx="12" fill="#181e28" stroke="#34d399" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghpGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 自動公開の全体パイプライン</text>
+
+    <text x="16" y="62" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">① main ブランチへ push / PRマージ</text>
+    <text x="28" y="80" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">※ 作業ブランチのpushでは動かない！</text>
+
+    <text x="16" y="104" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">② GitHub Actions 起動（Ubuntuコンテナ）</text>
+    <text x="28" y="122" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">依存関係インストール → npm run build 実行</text>
+
+    <text x="16" y="146" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">③ dist成果物を Pages サーバーへ即時配信</text>
+  </g>
+
+  <!-- Card 2: 必須初期設定 -->
+  <g transform="translate(415, 65)" filter="url(#shadowGHPD)">
+    <rect width="350" height="165" rx="12" fill="#181e28" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghpGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. リポジトリの必須初期設定（1回のみ）</text>
+
+    <text x="16" y="62" fill="#93c5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Settings → Pages を開く</text>
+    <text x="16" y="82" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Build and deployment の「Source」を</text>
+    
+    <rect x="14" y="94" width="322" height="32" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="175" y="115" text-anchor="middle" fill="#fde047" font-family="Consolas, monospace" font-size="13" font-weight="bold">GitHub Actions</text>
+
+    <text x="16" y="148" fill="#bfdbfe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Deploy from a branch から必ず切り替える！</text>
+  </g>
+
+  <!-- Card 3: 反映されない時の原因切り分け -->
+  <g transform="translate(35, 250)" filter="url(#shadowGHPD)">
+    <rect width="350" height="165" rx="12" fill="#20181e" stroke="#f87171" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghpGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. 反映されない時の4大チェックリスト</text>
+
+    <text x="16" y="62" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">✔ main に入っているか？（作業ブランチのまま放置）</text>
+    <text x="16" y="85" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">✔ Actions タブが緑色チェック（✔）か？（ビルド落ち）</text>
+    <text x="16" y="108" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">✔ デプロイ完了から1〜2分待ったか？（CDN反映ラグ）</text>
+    <text x="16" y="131" fill="#fca5a5" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">✔ ブラウザキャッシュが残っていないか？（Ctrl+F5）</text>
+    <text x="16" y="152" fill="#fecaca" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">上から順に確認すれば原因は100%特定可能</text>
+  </g>
+
+  <!-- Card 4: baseパスの崩れ防止 -->
+  <g transform="translate(415, 250)" filter="url(#shadowGHPD)">
+    <rect width="350" height="165" rx="12" fill="#1b1828" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghpGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. CSS崩れ・404を防ぐ設定の要点</text>
+
+    <text x="16" y="60" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">astro.config.mjs の base 設定:</text>
+
+    <rect x="14" y="70" width="322" height="38" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="22" y="87" fill="#ddd6fe" font-family="Consolas, monospace" font-size="11">base: '/howto-canvas'</text>
+    <text x="22" y="101" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="9">リポジトリ名と一致させてCSS・画像リンクを保持</text>
+
+    <text x="16" y="128" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">カスタムドメイン以外はサブパスの指定が必須。</text>
+    <text x="16" y="148" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">画像やリンクは相対パスかベース考慮リンクで記載！</text>
+  </g>
+</svg>

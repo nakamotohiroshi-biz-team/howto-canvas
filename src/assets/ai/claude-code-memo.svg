@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCCM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1e38"/>
+    </linearGradient>
+    <linearGradient id="headerGradCCM" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadowCCM" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgCCM)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">Claude Code 設定・権限・実務運用の全体マップ</text>
+
+  <!-- Card 1: 設定ファイル階層 -->
+  <g transform="translate(35, 65)" filter="url(#shadowCCM)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cardGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 設定ファイルの3階層</text>
+
+    <text x="16" y="62" fill="#93c5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">~/.claude/settings.json</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PC全体で共通（個人設定のデフォルト）</text>
+
+    <text x="16" y="106" fill="#93c5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">.claude/settings.json</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">プロジェクト共有（Gitでチームと同期）</text>
+
+    <text x="16" y="150" fill="#fcd34d" font-family="Consolas, monospace" font-size="11">settings.local.json: 自分専用・Git除外</text>
+  </g>
+
+  <!-- Card 2: 権限ルール制御 -->
+  <g transform="translate(415, 65)" filter="url(#shadowCCM)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cardGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. 権限（allow / deny）の制御</text>
+
+    <text x="16" y="62" fill="#6ee7b7" font-family="Consolas, monospace" font-size="12" font-weight="bold">"allow": ["Bash(git status)"]</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">確認ダイアログなしで自動実行を許可</text>
+
+    <text x="16" y="106" fill="#fca5a5" font-family="Consolas, monospace" font-size="12" font-weight="bold">"deny": ["Bash(rm -rf *)"]</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">常にブロック（allow より優先され安全を担保）</text>
+
+    <text x="16" y="150" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">危険なコマンドは deny で確実にガード！</text>
+  </g>
+
+  <!-- Card 3: CLAUDE.md -->
+  <g transform="translate(35, 250)" filter="url(#shadowCCM)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cardGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. プロジェクト知識源「CLAUDE.md」</text>
+
+    <text x="16" y="62" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">リポジトリ直下に配置するガイド役</text>
+    <text x="16" y="82" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">- 開発サーバー起動・ビルド手順（npm run dev）</text>
+    <text x="16" y="102" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">- コーディング規約・命名規則・言語ルール</text>
+    <text x="16" y="122" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">- コミットメッセージの形式やテストルール</text>
+    <text x="16" y="148" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">会話開始時に自動参照され前提ズレを防止</text>
+  </g>
+
+  <!-- Card 4: 実務で役立つ操作 -->
+  <g transform="translate(415, 250)" filter="url(#shadowCCM)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#f97316" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cardGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. 実務でよく使う操作コマンド</text>
+
+    <text x="16" y="62" fill="#fdba74" font-family="Consolas, monospace" font-size="12" font-weight="bold">/clear または /reset</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">別の作業に移るときにコンテキストを初期化</text>
+
+    <text x="16" y="106" fill="#fdba74" font-family="Consolas, monospace" font-size="12" font-weight="bold">/compact</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">過去の会話を要約してトークン枠を節約</text>
+
+    <text x="16" y="150" fill="#fed7aa" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">Escキーで実行中の中断・指示の追加が可能</text>
+  </g>
+</svg>

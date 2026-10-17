@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPTM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#2a1b3d"/>
+    </linearGradient>
+    <linearGradient id="cGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="cGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="cGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="cGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="shadowPTM" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgPTM)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">Claude 高精度プロンプト設計フレームワーク</text>
+
+  <!-- Card 1: 4大必須要素 -->
+  <g transform="translate(35, 65)" filter="url(#shadowPTM)">
+    <rect width="350" height="165" rx="12" fill="#1b1c2e" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 失敗しないプロンプトの4大要素</text>
+
+    <text x="16" y="62" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">① 役割（Role）: 「経験豊富なシニアエンジニア」等</text>
+    <text x="16" y="85" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">② 目的（Goal）: 「新入社員向け社内Wikiの作成」等</text>
+    <text x="16" y="108" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">③ 条件（Constraints）: 「3箇条・平易な表現・表形式」等</text>
+    <text x="16" y="131" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">④ 材料（Input）: 参照する仕様書・ソース・生データ</text>
+    <text x="16" y="152" fill="#c4b5fd" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">この4つを揃えるだけで回答ブレが劇的に減少！</text>
+  </g>
+
+  <!-- Card 2: XMLタグ構造化 -->
+  <g transform="translate(415, 65)" filter="url(#shadowPTM)">
+    <rect width="350" height="165" rx="12" fill="#1b1c2e" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. XMLタグによる境界分離</text>
+
+    <text x="16" y="62" fill="#7dd3fc" font-family="Consolas, monospace" font-size="11" font-weight="bold">&lt;instructions&gt;</text>
+    <text x="28" y="80" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">実行したい指示・制約事項を明確に記述</text>
+    <text x="16" y="98" fill="#7dd3fc" font-family="Consolas, monospace" font-size="11" font-weight="bold">&lt;/instructions&gt;</text>
+
+    <text x="16" y="118" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="bold">&lt;input_text&gt;</text>
+    <text x="28" y="136" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">処理対象の文章やコードデータを配置</text>
+    <text x="16" y="154" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="bold">&lt;/input_text&gt;</text>
+  </g>
+
+  <!-- Card 3: 実務テンプレート -->
+  <g transform="translate(35, 250)" filter="url(#shadowPTM)">
+    <rect width="350" height="165" rx="12" fill="#1b1c2e" stroke="#34d399" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. 業務即戦力の4大ひな形</text>
+
+    <text x="16" y="62" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・文章要約: 3箇条・重要数値・決定事項の抽出</text>
+    <text x="16" y="85" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・文章校正: 誤字脱字・二重否定の改善・トーン統一</text>
+    <text x="16" y="108" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・コードレビュー: バグ発見・計算量・可読性診断</text>
+    <text x="16" y="131" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・企画・壁打ち: MECEな選択肢比較・リスク網羅</text>
+    <text x="16" y="152" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">コピペしてカッコを埋めるだけで即完了</text>
+  </g>
+
+  <!-- Card 4: クオリティ向上テク -->
+  <g transform="translate(415, 250)" filter="url(#shadowPTM)">
+    <rect width="350" height="165" rx="12" fill="#1b1c2e" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#cGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. アウトプットを最高にする秘訣</text>
+
+    <text x="16" y="62" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・理想の出力例（Few-shot）を1つ添える</text>
+    <text x="16" y="82" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">期待するJSONやMarkdownの完成見本を提示</text>
+
+    <text x="16" y="108" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">・「段階的に考えて」思考ステップを挟む</text>
+    <text x="16" y="128" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">論理的な結論に至る推論過程を出力させる</text>
+
+    <text x="16" y="152" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">Claude固有の高い文脈理解力をフル活用！</text>
+  </g>
+</svg>

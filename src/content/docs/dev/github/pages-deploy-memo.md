@@ -5,6 +5,8 @@ sidebar:
   order: 4
 ---
 
+![GitHub Pages 自動公開＆障害診断マップ](../../../../assets/dev/github-pages-deploy.svg)
+
 GitHub Pagesは、リポジトリの内容をそのままWebサイトとして公開できるサービスです。
 このサイトのように、ビルドが必要な静的サイトは、GitHub Actionsでビルドして公開する構成がよく使われます。
 

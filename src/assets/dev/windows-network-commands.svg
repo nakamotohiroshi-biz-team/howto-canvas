@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWNC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#19283e"/>
+    </linearGradient>
+    <linearGradient id="wncGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="wncGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="wncGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="wncGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="shadowWNC" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgWNC)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">Windows ネットワーク診断 5大コマンド＆切り分け早見表</text>
+
+  <!-- Card 1: 自身の設定確認 -->
+  <g transform="translate(35, 65)" filter="url(#shadowWNC)">
+    <rect width="350" height="165" rx="12" fill="#182030" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#wncGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 自端末の設定確認（ipconfig）</text>
+
+    <text x="16" y="62" fill="#7dd3fc" font-family="Consolas, monospace" font-size="12" font-weight="bold">ipconfig /all</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">自身のIPアドレス、デフォルトGW、DNSサーバーを確認</text>
+
+    <text x="16" y="106" fill="#7dd3fc" font-family="Consolas, monospace" font-size="12" font-weight="bold">ipconfig /flushdns</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">PC内に残った古いDNS名前解決キャッシュをクリア</text>
+
+    <text x="16" y="150" fill="#bfdbfe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">「169.254.x.x」ならDHCPのIP取得失敗を疑う</text>
+  </g>
+
+  <!-- Card 2: 疎通と経路追跡 -->
+  <g transform="translate(415, 65)" filter="url(#shadowWNC)">
+    <rect width="350" height="165" rx="12" fill="#182428" stroke="#34d399" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#wncGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. 疎通と経路（ping / tracert）</text>
+
+    <text x="16" y="62" fill="#6ee7b7" font-family="Consolas, monospace" font-size="12" font-weight="bold">ping &lt;相手のIPまたはドメイン&gt;</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">パケットが相手まで届き返答があるか（応答速度）を確認</text>
+
+    <text x="16" y="106" fill="#6ee7b7" font-family="Consolas, monospace" font-size="12" font-weight="bold">tracert -d &lt;相手先&gt;</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">目的地までの途中ルーターを順に辿り途切れ箇所を特定</text>
+
+    <text x="16" y="150" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">応答なし（Time out）が出た区間で障害を特定</text>
+  </g>
+
+  <!-- Card 3: DNSとポート診断 -->
+  <g transform="translate(35, 250)" filter="url(#shadowWNC)">
+    <rect width="350" height="165" rx="12" fill="#201c30" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#wncGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. DNSと通信状態（nslookup / netstat）</text>
+
+    <text x="16" y="62" fill="#c4b5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">nslookup &lt;ホスト名&gt;</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">ドメインからIPへ正しく変換できているかDNS診断</text>
+
+    <text x="16" y="106" fill="#c4b5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">netstat -ano</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">待ち受け中のポート（LISTENING）とプロセスIDを一覧表示</text>
+
+    <text x="16" y="150" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">開発中のポート衝突（3000番/8080番等）の調査に必須</text>
+  </g>
+
+  <!-- Card 4: つながらない時の切り分けフロー -->
+  <g transform="translate(415, 250)" filter="url(#shadowWNC)">
+    <rect width="350" height="165" rx="12" fill="#242018" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#wncGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. つながらない時の切り分け4段階</text>
+
+    <text x="16" y="62" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Step 1: ping 127.0.0.1（自PCのTCP/IP正常性）</text>
+    <text x="16" y="85" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Step 2: ping &lt;デフォルトGW&gt;（社内ルーター疎通）</text>
+    <text x="16" y="108" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Step 3: ping 8.8.8.8（外のインターネット疎通）</text>
+    <text x="16" y="131" fill="#fde68a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="bold">Step 4: ping google.com（DNS名前解決の成否）</text>
+    <text x="16" y="152" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10">失敗したStepの箇所に原因が存在する！</text>
+  </g>
+</svg>

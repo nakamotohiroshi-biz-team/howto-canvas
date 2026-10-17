@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGHCLI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#192338"/>
+    </linearGradient>
+    <linearGradient id="ghcGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="ghcGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="ghcGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="ghcGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="shadowGHCLI" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="url(#bgGHCLI)"/>
+
+  <text x="400" y="38" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="bold">GitHub CLI（gh）ターミナル直結チートシート</text>
+
+  <!-- Card 1: 認証・ログイン -->
+  <g transform="translate(35, 65)" filter="url(#shadowGHCLI)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghcGrad1)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">1. 初回ログインとステータス</text>
+
+    <text x="16" y="62" fill="#93c5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh auth login</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">ブラウザ認証で安全にキーリングへトークン保存</text>
+
+    <text x="16" y="106" fill="#93c5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh auth status</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">現在のアカウントとスコープ（権限）を確認</text>
+
+    <text x="16" y="150" fill="#bfdbfe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">手動でトークンをコピー＆ペーストする手間ゼロ！</text>
+  </g>
+
+  <!-- Card 2: PR作成 -->
+  <g transform="translate(415, 65)" filter="url(#shadowGHCLI)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#34d399" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghcGrad2)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">2. プルリクエスト（PR）の作成</text>
+
+    <text x="16" y="62" fill="#6ee7b7" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh pr create</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">対話形式でタイトル・本文・レビュアーを指定</text>
+
+    <text x="16" y="106" fill="#6ee7b7" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh pr create --web</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">ブラウザのPR作成画面をワンアクションで直開き</text>
+
+    <text x="16" y="150" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">作業ブランチpush直後に即座にPR発行可能</text>
+  </g>
+
+  <!-- Card 3: PRの確認とマージ -->
+  <g transform="translate(35, 250)" filter="url(#shadowGHCLI)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghcGrad3)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">3. PRの確認・差分チェック・マージ</text>
+
+    <text x="16" y="62" fill="#c4b5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh pr list / gh pr view &lt;番号&gt;</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">オープン中のPR一覧や変更内容をターミナルで確認</text>
+
+    <text x="16" y="106" fill="#c4b5fd" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh pr merge &lt;番号&gt; --squash</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">レビュー承認済みのPRをコマンドから即時マージ</text>
+
+    <text x="16" y="150" fill="#ddd6fe" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">ブランチの削除（--delete-branch）も自動対応</text>
+  </g>
+
+  <!-- Card 4: Issue管理 -->
+  <g transform="translate(415, 250)" filter="url(#shadowGHCLI)">
+    <rect width="350" height="165" rx="12" fill="#181e2e" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect width="350" height="34" rx="12" fill="url(#ghcGrad4)"/>
+    <text x="175" y="22" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="bold">4. Issue管理とリポジトリ操作</text>
+
+    <text x="16" y="62" fill="#fde68a" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh issue list / gh issue create</text>
+    <text x="16" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">バグ報告やタスク起票をエディタから即座に実行</text>
+
+    <text x="16" y="106" fill="#fde68a" font-family="Consolas, monospace" font-size="12" font-weight="bold">gh repo view --web</text>
+    <text x="16" y="124" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">現在作業中のGitHubページをブラウザで即座に表示</text>
+
+    <text x="16" y="150" fill="#fef08a" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11">ターミナルからマウス操作なしの超高速ワークフロー</text>
+  </g>
+</svg>
