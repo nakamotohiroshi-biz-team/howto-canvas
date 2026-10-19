@@ -41,6 +41,10 @@ export default defineConfig({
               label: 'MCP（共通ツール規格）',
               items: [{ autogenerate: { directory: 'ai/mcp' } }],
             },
+            {
+              label: 'AIエージェント',
+              items: [{ autogenerate: { directory: 'ai/agents' } }],
+            },
           ],
         },
         {

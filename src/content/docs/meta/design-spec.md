@@ -93,7 +93,8 @@ howto-canvas/
 │   │       │   ├── claude/     # Claude関連記事（個別原則）
 │   │       │   ├── gemini/     # Gemini関連記事（個別原則）
 │   │       │   ├── notebooklm/ # NotebookLM関連記事
-│   │       │   └── mcp/        # MCP共通ツール規格
+│   │       │   ├── mcp/        # MCP共通ツール規格
+│   │       │   └── agents/     # AIエージェント
 │   │       ├── dev/            # 開発・Git・GitHub関連記事
 │   │       │   ├── git/        # Gitバージョン管理
 │   │       │   ├── network/    # ネットワークコマンド
@@ -133,6 +134,7 @@ mindmap
     4. 共通・連携
       スキル共有・移行手順
       MCP 完全ガイド
+      AIエージェント 校務活用3選
     5. 開発・Git
       Git基本データフロー
       チーム開発基本ガイド
