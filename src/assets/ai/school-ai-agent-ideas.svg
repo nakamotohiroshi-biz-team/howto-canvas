@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="taskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title & Subtitle -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">校務で使えるAIエージェント 3つのアイデア</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">「頭脳」「道具」「ルール」を持たせたAIに下書きを任せ、最後は人が確認する</text>
+
+  <!-- Left: 3 tasks -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="100" width="215" height="75" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="100" width="12" height="75" rx="6" fill="url(#taskGrad)"/>
+    <text x="55" y="128" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="bold">1. 会議・議事録</text>
+    <text x="55" y="152" fill="#94a3b8" font-family="sans-serif" font-size="11">録音・文字起こしを渡す</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="30" y="190" width="215" height="75" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="190" width="12" height="75" rx="6" fill="url(#taskGrad)"/>
+    <text x="55" y="218" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="bold">2. 試験問題・小テスト</text>
+    <text x="55" y="242" fill="#94a3b8" font-family="sans-serif" font-size="11">科目・範囲・難易度を渡す</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="30" y="280" width="215" height="75" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="280" width="12" height="75" rx="6" fill="url(#taskGrad)"/>
+    <text x="55" y="308" fill="#f1f5f9" font-family="sans-serif" font-size="14" font-weight="bold">3. 学生対応・お知らせ</text>
+    <text x="55" y="332" fill="#94a3b8" font-family="sans-serif" font-size="11">伝えたい要点を渡す</text>
+  </g>
+
+  <!-- Arrow left -> center -->
+  <polygon points="255,222 255,212 271,217" fill="#64748b"/>
+  <line x1="248" y1="217" x2="256" y2="217" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Center: Agent -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="100" width="240" height="255" rx="12" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="280" y="100" width="240" height="40" rx="12" fill="url(#agentGrad)"/>
+    <text x="400" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">AIエージェント</text>
+
+    <rect x="296" y="152" width="208" height="42" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="170" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">頭脳</text>
+    <text x="308" y="186" fill="#94a3b8" font-family="sans-serif" font-size="11">AI（Claude / Gemini など）</text>
+
+    <rect x="296" y="202" width="208" height="42" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="220" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">道具</text>
+    <text x="308" y="236" fill="#94a3b8" font-family="sans-serif" font-size="11">資料・ひな形・ファイル出力</text>
+
+    <rect x="296" y="252" width="208" height="42" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="270" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">ルール</text>
+    <text x="308" y="286" fill="#94a3b8" font-family="sans-serif" font-size="11">指示文・守ること・書式</text>
+
+    <rect x="296" y="304" width="208" height="38" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="400" y="328" text-anchor="middle" fill="#6ee7b7" font-family="sans-serif" font-size="12" font-weight="bold">人の確認（最終チェック）</text>
+  </g>
+
+  <!-- Arrow center -> right -->
+  <polygon points="529,222 529,212 545,217" fill="#64748b"/>
+  <line x1="522" y1="217" x2="530" y2="217" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Right: outputs -->
+  <g filter="url(#shadow)">
+    <rect x="555" y="100" width="215" height="255" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="555" y="100" width="215" height="40" rx="12" fill="url(#outputGrad)"/>
+    <text x="662" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">できあがる下書き</text>
+
+    <text x="575" y="175" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">議事録・ToDo表</text>
+    <text x="575" y="193" fill="#94a3b8" font-family="sans-serif" font-size="11">決定事項と担当・期限</text>
+
+    <text x="575" y="233" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">問題・解答・解説</text>
+    <text x="575" y="251" fill="#94a3b8" font-family="sans-serif" font-size="11">出題範囲に沿った案</text>
+
+    <text x="575" y="291" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">連絡文・案内文</text>
+    <text x="575" y="309" fill="#94a3b8" font-family="sans-serif" font-size="11">定型に沿った文面案</text>
+  </g>
+
+  <!-- Bottom Tip -->
+  <text x="400" y="390" text-anchor="middle" fill="#fb923c" font-family="sans-serif" font-size="12">
+    ポイント: 個人情報・成績は、学校のルールに従って扱い、AIの出力は必ず人が確認する
+  </text>
+</svg>
