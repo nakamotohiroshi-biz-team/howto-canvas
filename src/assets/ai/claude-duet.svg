@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="duetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title & Subtitle -->
+  <text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Claude Duet ― 自分から動いて、あなたに知らせるAIエージェント</text>
+  <text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">連携したアプリを見守り、作業を進め、大事な操作の前には必ず承認を求める</text>
+
+  <!-- Left: connected apps -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="100" width="215" height="70" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="100" width="12" height="70" rx="6" fill="url(#appGrad)"/>
+    <text x="55" y="127" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">メール・チャット</text>
+    <text x="55" y="149" fill="#94a3b8" font-family="sans-serif" font-size="11">Gmail・Slack など</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="30" y="182" width="215" height="70" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="182" width="12" height="70" rx="6" fill="url(#appGrad)"/>
+    <text x="55" y="209" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">会計・営業</text>
+    <text x="55" y="231" fill="#94a3b8" font-family="sans-serif" font-size="11">QuickBooks・HubSpot など</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="30" y="264" width="215" height="70" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+    <rect x="30" y="264" width="12" height="70" rx="6" fill="url(#appGrad)"/>
+    <text x="55" y="291" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">デザイン・契約</text>
+    <text x="55" y="313" fill="#94a3b8" font-family="sans-serif" font-size="11">Canva・DocuSign など</text>
+  </g>
+
+  <polygon points="255,222 255,212 271,217" fill="#64748b"/>
+  <line x1="248" y1="217" x2="256" y2="217" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Center: Duet -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="100" width="240" height="234" rx="12" fill="#1e293b" stroke="#ea580c" stroke-width="1.5"/>
+    <rect x="280" y="100" width="240" height="40" rx="12" fill="url(#duetGrad)"/>
+    <text x="400" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">Claude Duet</text>
+
+    <rect x="296" y="152" width="208" height="38" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="168" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">朝の要約</text>
+    <text x="308" y="183" fill="#94a3b8" font-family="sans-serif" font-size="11">大事な項目をまとめて届ける</text>
+
+    <rect x="296" y="196" width="208" height="38" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="212" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">見守り</text>
+    <text x="308" y="227" fill="#94a3b8" font-family="sans-serif" font-size="11">数時間おきに確認、必要時に通知</text>
+
+    <rect x="296" y="240" width="208" height="38" rx="8" fill="#0f172a" stroke="#fb923c" stroke-width="1"/>
+    <text x="308" y="256" fill="#fb923c" font-family="sans-serif" font-size="12" font-weight="bold">タスクの実行</text>
+    <text x="308" y="271" fill="#94a3b8" font-family="sans-serif" font-size="11">専用の仮想環境で作業を進める</text>
+
+    <rect x="296" y="284" width="208" height="38" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="400" y="308" text-anchor="middle" fill="#6ee7b7" font-family="sans-serif" font-size="12" font-weight="bold">実行の前に、あなたの承認</text>
+  </g>
+
+  <polygon points="529,222 529,212 545,217" fill="#64748b"/>
+  <line x1="522" y1="217" x2="530" y2="217" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Right: outputs -->
+  <g filter="url(#shadow)">
+    <rect x="555" y="100" width="215" height="234" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="555" y="100" width="215" height="40" rx="12" fill="url(#outGrad)"/>
+    <text x="662" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">あなたに届くもの</text>
+
+    <text x="575" y="172" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">朝のブリーフ</text>
+    <text x="575" y="190" fill="#94a3b8" font-family="sans-serif" font-size="11">今日の注目ポイント</text>
+
+    <text x="575" y="228" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">必要なときの通知</text>
+    <text x="575" y="246" fill="#94a3b8" font-family="sans-serif" font-size="11">対応が要ることだけ</text>
+
+    <text x="575" y="284" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="bold">下書き・資料・予定</text>
+    <text x="575" y="302" fill="#94a3b8" font-family="sans-serif" font-size="11">確認してから実行</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="400" y="372" text-anchor="middle" fill="#fb923c" font-family="sans-serif" font-size="12">
+    リサーチプレビュー: いまは米国の Pro / Max ユーザーが対象（ウェイトリスト方式）
+  </text>
+  <text x="400" y="394" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="11">
+    提供状況は変わります。最新は公式ページで確認してください
+  </text>
+</svg>

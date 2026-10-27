@@ -125,6 +125,7 @@ mindmap
       プロの裏技・Artifacts
       Claude Code 備忘録
       プロンプトひな形集
+      Claude Duet 解説
     2. Gemini
       最新裏技・Deep Research
       プロの裏技・動画解析
