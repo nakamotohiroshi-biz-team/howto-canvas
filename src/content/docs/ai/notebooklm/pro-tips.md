@@ -7,9 +7,13 @@ sidebar:
 
 ![NotebookLM裏技解説図](../../../../assets/ai/notebooklm-tips.svg)
 
-Googleが提供する「NotebookLM（旧Project Tailwind / Gemini Notebook）」は、一般的な生成AIと異なり「自分がアップロードした資料だけを元に考える」ノート型AIアシスタントです。
+Googleが提供する「NotebookLM（旧Project Tailwind。現在の名称は Gemini Notebook）」は、一般的な生成AIと異なり「自分がアップロードした資料だけを元に考える」ノート型AIアシスタントです。
 
 嘘をつかない（ハルシネーションを起こさない）特性を最大限に活かし、業務や学習の効率を劇的に高めるプロの裏技を紹介します。
+
+:::note[名称が変わりました]
+2026年7月に、NotebookLM は **Gemini Notebook** に名称が変わりました。同じサービスで、既存のノートブックや共有リンクは、そのまま使えます。この記事では、これまでの呼び方である「NotebookLM」も併記しています。画面の表記は、更新の時期によって異なる場合があります。
+:::
 
 ## 1. 裏技1: 「音声解説（Audio Overview）」の指示文ハック
 

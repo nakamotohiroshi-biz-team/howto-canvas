@@ -49,10 +49,21 @@ graph LR
 
 Claude DesktopアプリにMCPサーバーを接続する設定手順です。
 
+### 接続する3つの方法
+
+| 方法 | 内容 | 向いている場面 |
+| :--- | :--- | :--- |
+| 拡張機能（`.mcpb`） | パッケージ化されたサーバーを、ほぼワンクリックで追加する。コネクタの一覧からも探せる | 手軽に試したいとき |
+| 設定ファイル（JSON） | 下で説明する方法 | 自分で用意した、パソコン内のサーバー |
+| カスタムコネクタ | Settings → Connectors から、Web上のサーバーをURLで追加する（通信方式は Streamable HTTP） | クラウド上のサーバー |
+
+画面の名前や場所は、バージョンによって異なる場合があります。以降は、設定ファイル（JSON）を使う方法を説明します。
+
 ### 設定ファイルの場所
 - Windows: `%APPDATA%\Claude\claude_desktop_config.json`
   （`C:\Users\<ユーザー名>\AppData\Roaming\Claude\claude_desktop_config.json`）
 - macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Microsoft Store 版などでインストールした Windows では、場所が異なる場合があります。設定画面の「Settings → Developer → Edit Config」から開くと確実です。
 
 ### 設定例（FilesystemサーバーとFetchサーバー）
 
@@ -75,7 +86,7 @@ Claude DesktopアプリにMCPサーバーを接続する設定手順です。
 }
 ```
 
-設定を保存した後、Claude Desktopを完全に終了（タスクバーの通知領域からも終了）して再起動します。チャット入力欄の右下に「ハンマー（電気プラグ）」アイコンが表示されれば接続成功です。
+設定を保存した後、Claude Desktopを完全に終了（タスクバーの通知領域からも終了）して再起動します。チャット入力欄の近くに、ツールの一覧（ハンマーや電気プラグのアイコンなど）が表示されれば接続成功です（表示は、バージョンによって異なります）。
 
 ## 4. Gemini / Antigravity での初期設定
 
