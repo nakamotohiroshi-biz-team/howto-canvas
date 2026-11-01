@@ -95,14 +95,14 @@ AIは、もっともらしい誤りを書くことがあります。正解の確
 
 | レベル | 方法 | 向いている人 |
 | :--- | :--- | :--- |
-| 1 | **ノーコード**: Gemini の Gem、Claude の Projects に、指示文と資料を登録する | まず試したい人 |
+| 1 | **ノーコード**: Gemini のスキル、Claude の Projects に、指示文と資料を登録する | まず試したい人 |
 | 2 | **Claude Code**: スキルやMCPで、ファイルの読み書きまで自動化する | ファイル出力まで任せたい人 |
 | 3 | **コード**: APIで、ツール呼び出しを組み込む | 自作のしくみにしたい人 |
 
 最初は、レベル1がおすすめです。同じ指示文を毎回貼り付ける手間がなくなります。
 
 関連記事:
-- [Gemini 最新・便利な使い方＆裏技大全（Gem の作り方）](/howto-canvas/ai/gemini/tips-and-tricks/)
+- [Gemini 最新・便利な使い方＆裏技大全（スキル（旧Gem）の紹介）](/howto-canvas/ai/gemini/tips-and-tricks/)
 - [Claude プロンプトひな形集](/howto-canvas/ai/claude/prompt-templates/)
 - [Claude Code の基本と使い方](/howto-canvas/ai/claude/claude-code/)
 - [初心者向け Claude スキル（Tool Use）入門](/howto-canvas/ai/claude/skills/)
