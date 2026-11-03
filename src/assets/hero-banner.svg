@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 660" width="100%" height="100%">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f172a"/>
@@ -22,6 +22,10 @@
       <stop offset="0%" stop-color="#059669"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
+    <linearGradient id="obsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
     <linearGradient id="devGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#7c3aed"/>
       <stop offset="100%" stop-color="#9333ea"/>
@@ -32,7 +36,7 @@
     </filter>
   </defs>
 
-  <rect width="700" height="480" rx="16" fill="url(#bgGrad)"/>
+  <rect width="700" height="660" rx="16" fill="url(#bgGrad)"/>
 
   <!-- Top Slate Bar -->
   <rect x="35" y="30" width="630" height="40" rx="12" fill="#1e293b"/>
@@ -41,7 +45,7 @@
   <circle cx="92" cy="50" r="5" fill="#10b981"/>
   <text x="350" y="55" text-anchor="middle" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="bold">HowTo Canvas ｜ AI ＆ 開発ナレッジハブ</text>
 
-  <!-- 4 Category Cards Grid (2x2) -->
+  <!-- 5 Category Cards Grid (2 columns x 2 rows + 1 wide card) -->
 
   <!-- Card 1: Claude -->
   <g filter="url(#shadow)">
@@ -79,15 +83,30 @@
     <text x="75" y="405" fill="#94a3b8" font-family="sans-serif" font-size="10">会議録音をドラッグ＆ドロップで一発作成</text>
   </g>
 
-  <!-- Card 4: 開発・エンジニアリング -->
+  <!-- Card 4: Obsidian -->
   <g filter="url(#shadow)">
-    <rect x="365" y="270" width="280" height="160" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
-    <rect x="365" y="270" width="280" height="34" rx="12" fill="url(#devGrad)"/>
-    <text x="505" y="292" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">4. 開発・エンジニアリング</text>
-    
-    <text x="385" y="330" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">・Git 基本データフロー4領域</text>
-    <text x="385" y="355" fill="#e2e8f0" font-family="sans-serif" font-size="11">・GitHub チーム開発＆プルリク運用</text>
-    <text x="385" y="380" fill="#e2e8f0" font-family="sans-serif" font-size="11">・日常コマンド早見表チートシート</text>
-    <text x="385" y="405" fill="#94a3b8" font-family="sans-serif" font-size="10">ブランチ作成からレビュー・安全なマージ</text>
+    <rect x="365" y="270" width="280" height="160" rx="12" fill="#1e293b" stroke="#e11d48" stroke-width="1.5"/>
+    <rect x="365" y="270" width="280" height="34" rx="12" fill="url(#obsGrad)"/>
+    <text x="505" y="292" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">4. Obsidian（メモ・ナレッジ管理）</text>
+
+    <text x="385" y="330" fill="#fb7185" font-family="sans-serif" font-size="12" font-weight="bold">・メモをつなげて育てるノートアプリ</text>
+    <text x="385" y="355" fill="#e2e8f0" font-family="sans-serif" font-size="11">・最初の1週間・Markdown早見表</text>
+    <text x="385" y="380" fill="#e2e8f0" font-family="sans-serif" font-size="11">・校務のメモの取り方・活用例</text>
+    <text x="385" y="405" fill="#94a3b8" font-family="sans-serif" font-size="10">Claude Code でボールトを整理</text>
+  </g>
+
+  <!-- Card 5: 開発・エンジニアリング -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="450" width="590" height="160" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+    <rect x="55" y="450" width="590" height="34" rx="12" fill="url(#devGrad)"/>
+    <text x="350" y="472" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">5. 開発・エンジニアリング</text>
+
+    <text x="75" y="510" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">・Git 基本データフロー4領域</text>
+    <text x="75" y="535" fill="#e2e8f0" font-family="sans-serif" font-size="11">・GitHub チーム開発＆プルリク運用</text>
+    <text x="75" y="560" fill="#e2e8f0" font-family="sans-serif" font-size="11">・日常コマンド早見表チートシート</text>
+    <text x="75" y="585" fill="#94a3b8" font-family="sans-serif" font-size="10">ブランチ作成からレビュー・安全なマージ</text>
+    <text x="365" y="510" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">・Windows ネットワークコマンド一覧</text>
+    <text x="365" y="535" fill="#e2e8f0" font-family="sans-serif" font-size="11">・GitHub CLI（gh）・GitHub Pages 公開</text>
+    <text x="365" y="560" fill="#e2e8f0" font-family="sans-serif" font-size="11">・.gitignore と機密情報の備忘録</text>
   </g>
 </svg>
