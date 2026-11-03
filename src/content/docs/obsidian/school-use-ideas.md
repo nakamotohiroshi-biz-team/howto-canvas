@@ -2,7 +2,7 @@
 title: 校務で使える Obsidian 活用例（会議メモ・授業準備・面談記録）
 description: 会議の議事録、授業の準備と振り返り、学生との面談記録を、Obsidianのテンプレートとリンクで整理する具体的な使い方と、個人情報を扱うときの注意点をまとめた活用ガイド
 sidebar:
-  order: 3
+  order: 5
 ---
 
 ![校務で使える Obsidian 活用例 3つ](../../../assets/obsidian/obsidian-school-use.svg)

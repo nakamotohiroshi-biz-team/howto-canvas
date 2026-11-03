@@ -96,6 +96,8 @@ Obsidian では、メモを入れるフォルダを**ボールト（Vault）**�
 ## 7. 次に読む記事
 
 - [最初の1週間の使い方](/howto-canvas/obsidian/first-week/)
+- [Markdown 書き方早見表](/howto-canvas/obsidian/markdown-cheatsheet/)
+- [校務のメモの取り方](/howto-canvas/obsidian/note-taking-tips/)
 - [校務で使える Obsidian 活用例](/howto-canvas/obsidian/school-use-ideas/)
 - [Claude Code × Obsidian：ボールトを Claude に整理してもらう](/howto-canvas/obsidian/claude-code-with-obsidian/)
 
