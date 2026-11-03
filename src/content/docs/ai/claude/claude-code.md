@@ -34,18 +34,32 @@ graph TD
 
 ### 前提条件
 - Claudeのサブスクリプション（Pro / Max / Team / Enterprise）、またはAnthropic Consoleのアカウント（API利用）があること
-- npmでインストールする場合は Node.js 18以上がインストールされていること（専用インストーラを使う場合は不要）
+- Windows の場合は、Git for Windows、または WSL がインストールされていること
+- 専用インストーラ（推奨）では Node.js は不要です。npm でのインストールは非推奨の方法で、その場合のみ Node.js 18以上が必要です
 
 ### インストール手順
 
-ターミナル（PowerShell、macOS Terminalなど）で以下を実行します。
+現在は、**専用インストーラ（ネイティブインストーラ）が推奨**されています。ターミナルで、お使いの環境に合うコマンドを1つ実行します。
 
 ```bash
-# グローバルインストール
-npm install -g @anthropic-ai/claude-code
+# Windows（PowerShell）
+irm https://claude.ai/install.ps1 | iex
+
+# macOS / Linux / WSL
+curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-Node.js を使わない専用インストーラも用意されています。最新のインストール手順は[公式ドキュメント](https://code.claude.com/docs/en/getting-started/installation)を確認してください。
+パッケージマネージャーを使う方法もあります。
+
+```bash
+# Windows（WinGet）
+winget install Anthropic.ClaudeCode
+
+# macOS（Homebrew）
+brew install --cask claude-code
+```
+
+以前の標準だった `npm install -g @anthropic-ai/claude-code` は、現在は非推奨です。すでに npm でインストールしている場合は、`claude install` で専用インストーラ版に移行できます。コマンドや対応環境は更新されることがあるため、最新の手順は[公式ドキュメント](https://code.claude.com/docs/en/setup)を確認してください。
 
 ### 初回起動と認証
 
