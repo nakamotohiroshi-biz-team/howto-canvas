@@ -48,6 +48,10 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Obsidian（メモ・ナレッジ管理）',
+          items: [{ autogenerate: { directory: 'obsidian' } }],
+        },
+        {
           label: '開発・エンジニアリング',
           items: [
             {
@@ -63,10 +67,6 @@ export default defineConfig({
               items: [{ autogenerate: { directory: 'dev/network' } }],
             },
           ],
-        },
-        {
-          label: 'Obsidian（メモ・ナレッジ管理）',
-          items: [{ autogenerate: { directory: 'obsidian' } }],
         },
         {
           label: '取扱説明書・サイト設計書',
