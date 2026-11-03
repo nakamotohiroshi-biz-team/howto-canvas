@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+<defs>
+<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+<linearGradient id="g_gray" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#334155"/></linearGradient><linearGradient id="g_purple" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient><linearGradient id="g_blue" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient><linearGradient id="g_orange" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#ea580c"/></linearGradient><linearGradient id="g_green" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#10b981"/></linearGradient><linearGradient id="g_teal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d9488"/><stop offset="100%" stop-color="#0891b2"/></linearGradient>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/></filter>
+</defs>
+<rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+<text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Markdown 書き方早見表 ― まずは3つだけ覚える</text>
+<text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">記号を使って、見出し・箇条書き・リンクを書く。Obsidianでは[[ ]]も使える</text>
+<g filter="url(#shadow)">
+<rect x="30.0" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+<rect x="30.0" y="100" width="162.5" height="40" rx="12" fill="url(#g_blue)"/>
+<text x="111.2" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">1. 見出し</text>
+<text x="111.2" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold"># 大見出し</text>
+<text x="46.0" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・## 中見出し</text>
+<text x="46.0" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・# のあとに半角スペース</text>
+<text x="46.0" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・**太字** も使える</text>
+</g>
+<polygon points="202.5,226.0 202.5,214.0 214.5,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="222.5" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#fb923c" stroke-width="1.5"/>
+<rect x="222.5" y="100" width="162.5" height="40" rx="12" fill="url(#g_orange)"/>
+<text x="303.8" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">2. 箇条書き</text>
+<text x="303.8" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">- 項目</text>
+<text x="238.5" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・- [ ] チェックボックス</text>
+<text x="238.5" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・1. 番号つきリスト</text>
+<text x="238.5" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・スペースでインデント</text>
+</g>
+<polygon points="395.0,226.0 395.0,214.0 407.0,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="415.0" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+<rect x="415.0" y="100" width="162.5" height="40" rx="12" fill="url(#g_purple)"/>
+<text x="496.2" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">3. リンク・表</text>
+<text x="496.2" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">[文字](URL)</text>
+<text x="431.0" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・[[ノート名]] 内部リンク</text>
+<text x="431.0" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・| 表 | も書ける</text>
+<text x="431.0" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・&gt; 引用 / ``` コード</text>
+</g>
+<polygon points="587.5,226.0 587.5,214.0 599.5,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="607.5" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+<rect x="607.5" y="100" width="162.5" height="40" rx="12" fill="url(#g_green)"/>
+<text x="688.8" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Obsidian独自</text>
+<text x="688.8" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">[[ ]] と #タグ</text>
+<text x="623.5" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・![[ ]] で埋め込み</text>
+<text x="623.5" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・&gt; [!note] 囲み</text>
+<text x="623.5" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・---で囲むプロパティ</text>
+</g>
+<text x="400" y="385" text-anchor="middle" fill="#fb923c" font-family="sans-serif" font-size="12">ポイント: 記号は半角で。# や - のあとには半角スペースを入れる</text>
+</svg>

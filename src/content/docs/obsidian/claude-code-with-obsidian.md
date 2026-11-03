@@ -2,7 +2,7 @@
 title: Claude Code × Obsidian：ボールトを Claude に整理してもらう方法
 description: Obsidianのボールト（フォルダ）でClaude Codeを開き、CLAUDE.mdのルールに沿ってメモの要約・整理をしてもらう方法と、面談記録などを守る設定、MCPでつなぐときの注意点
 sidebar:
-  order: 4
+  order: 6
 ---
 
 ![Claude Code × Obsidian ― ボールトを Claude に整理してもらう](../../../assets/obsidian/obsidian-claude-code.svg)
