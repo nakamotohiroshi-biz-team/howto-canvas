@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+<defs>
+<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+<linearGradient id="g_gray" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#334155"/></linearGradient><linearGradient id="g_purple" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient><linearGradient id="g_blue" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563eb"/><stop offset="100%" stop-color="#4f46e5"/></linearGradient><linearGradient id="g_orange" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#ea580c"/></linearGradient><linearGradient id="g_green" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#059669"/><stop offset="100%" stop-color="#10b981"/></linearGradient><linearGradient id="g_teal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0d9488"/><stop offset="100%" stop-color="#0891b2"/></linearGradient>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/></filter>
+</defs>
+<rect width="800" height="420" rx="16" fill="url(#bgGrad)"/>
+<text x="40" y="45" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">最初の1週間の使い方 ― 4つのステップ</text>
+<text x="40" y="70" fill="#94a3b8" font-family="sans-serif" font-size="13">最初から完璧に整えず、毎日少しずつ書きながら、つなぎ方を覚える</text>
+<g filter="url(#shadow)">
+<rect x="30.0" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<rect x="30.0" y="100" width="162.5" height="40" rx="12" fill="url(#g_gray)"/>
+<text x="111.2" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">1. 準備</text>
+<text x="111.2" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">ボールトを整える</text>
+<text x="46.0" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・フォルダは少なめに</text>
+<text x="46.0" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・OneDrive の注意</text>
+<text x="46.0" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・テンプレート用の場所</text>
+</g>
+<polygon points="202.5,226.0 202.5,214.0 214.5,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="222.5" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+<rect x="222.5" y="100" width="162.5" height="40" rx="12" fill="url(#g_blue)"/>
+<text x="303.8" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">2. 毎日書く</text>
+<text x="303.8" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">デイリーノート</text>
+<text x="238.5" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・今日のノートを開く</text>
+<text x="238.5" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・会議・気づきを書く</text>
+<text x="238.5" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・テンプレートで型化</text>
+</g>
+<polygon points="395.0,226.0 395.0,214.0 407.0,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="415.0" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+<rect x="415.0" y="100" width="162.5" height="40" rx="12" fill="url(#g_purple)"/>
+<text x="496.2" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">3. つなぐ</text>
+<text x="496.2" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">[[リンク]]</text>
+<text x="431.0" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・関連メモを[[ ]]で</text>
+<text x="431.0" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・タグは少しだけ</text>
+<text x="431.0" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・プロパティで整理</text>
+</g>
+<polygon points="587.5,226.0 587.5,214.0 599.5,220.0" fill="#64748b"/>
+<g filter="url(#shadow)">
+<rect x="607.5" y="100" width="162.5" height="240" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+<rect x="607.5" y="100" width="162.5" height="40" rx="12" fill="url(#g_green)"/>
+<text x="688.8" y="126" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">4. 見つける</text>
+<text x="688.8" y="178" text-anchor="middle" fill="#f1f5f9" font-family="sans-serif" font-size="13" font-weight="bold">検索・逆引き</text>
+<text x="623.5" y="218" fill="#94a3b8" font-family="sans-serif" font-size="11">・Ctrl+O で移動</text>
+<text x="623.5" y="244" fill="#94a3b8" font-family="sans-serif" font-size="11">・バックリンクを見る</text>
+<text x="623.5" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">・Ctrl+Shift+F 検索</text>
+</g>
+<text x="400" y="385" text-anchor="middle" fill="#fb923c" font-family="sans-serif" font-size="12">ポイント: 毎日1行でも書き続けることが、いちばんの上達の近道です</text>
+</svg>

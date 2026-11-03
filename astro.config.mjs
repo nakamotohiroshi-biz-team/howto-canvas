@@ -65,6 +65,10 @@ export default defineConfig({
           ],
         },
         {
+          label: 'Obsidian（メモ・ナレッジ管理）',
+          items: [{ autogenerate: { directory: 'obsidian' } }],
+        },
+        {
           label: '取扱説明書・サイト設計書',
           items: [{ autogenerate: { directory: 'meta' } }],
         },

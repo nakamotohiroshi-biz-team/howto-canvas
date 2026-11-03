@@ -86,6 +86,7 @@ howto-canvas/
 │   ├── assets/                 # 各カテゴリの専用SVG図解
 │   │   ├── ai/                 # Claude、Gemini、NotebookLM、MCP用図解
 │   │   ├── dev/                # Git、GitHub、チーム開発用図解
+│   │   ├── obsidian/           # Obsidian用図解
 │   │   └── meta/               # 取扱説明書・設計書用図解
 │   ├── content/
 │   │   └── docs/               # 記事コンテンツ（Markdown / MDX）
@@ -99,6 +100,7 @@ howto-canvas/
 │   │       │   ├── git/        # Gitバージョン管理
 │   │       │   ├── network/    # ネットワークコマンド
 │   │       │   └── github/     # GitHub＆チーム開発
+│   │       ├── obsidian/       # Obsidian（メモ・ナレッジ管理）
 │   │       ├── meta/           # 取扱説明書・設計書
 │   │       └── index.mdx       # トップページ
 │   └── styles/
@@ -151,7 +153,11 @@ mindmap
       GitHub Pages 公開・確認手順
       .gitignore と機密情報
       複数アカウント使い分け
-    6. サイト管理
+    6. Obsidian
+      何が便利か・最初の1週間
+      校務活用例
+      Claude Code 連携
+    7. サイト管理
       取扱説明書
       サイト設計書
 ```
