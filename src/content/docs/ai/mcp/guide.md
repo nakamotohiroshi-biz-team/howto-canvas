@@ -75,7 +75,7 @@ Claude DesktopアプリにMCPサーバーを接続する設定手順です。
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "C:\\Users\\hiroc\\Desktop"
+        "C:\\Users\\<ユーザー名>\\Desktop"
       ]
     },
     "fetch": {
