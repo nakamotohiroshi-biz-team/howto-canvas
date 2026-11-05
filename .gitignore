@@ -16,6 +16,19 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.env.*
+!.env.example
+
+# keys and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.token
+
+# local tool settings (personal)
+.claude/settings.local.json
 
 # macOS-specific files
 .DS_Store
